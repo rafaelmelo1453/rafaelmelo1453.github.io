@@ -36,13 +36,25 @@ oci --help
 
 Caso a instalação tenha sido bem sucedida receberá um output como esse.
 
-![Oci-Help](https://objectstorage.sa-saopaulo-1.oraclecloud.com/p/F4ceppVSvIlaAfzCmhLvVjXEeykRzrH61nScYp9Ayn7_WBxtbfar7VaejUbW0-11/n/gr8gkzaf8nit/b/bucket-euoraf4-site/o/2020-11-30-Configurando-OCI-CLI/oci-helpoci-help.png)
+![Oci-Help](https://objectstorage.sa-saopaulo-1.oraclecloud.com/p/E4YcwQoBdQsKXZm8fVrLci4xiInG0FiRaGWSQfNEXxVXJAmfiSXS-3-PPKoWV2Vr/n/gr8gkzaf8nit/b/bucket-euoraf4-site/o/2020-11-30-Configurando-OCI-CLI/oci-help.png)
 
 ## Configurando Oracle Cloud Infrastructure CLI
 
 Com o CLI instalado, agora é preciso configura-lo. Nesta etapa será necessário compartment OCID, tenancy OCID e user OCID.
 
-**Obtendo compartment OCID, tenancy OCID e user OCID**  
+**Obtendo User OCID, Compartmet OCID e Tenancy OCID** 
+
+User OCID: Navegue até Identity>Users>User Details
+
+![User-Ocid](https://objectstorage.sa-saopaulo-1.oraclecloud.com/p/np_zGbe9Zaz9UINKmPcGJhRIxsGrUHuVEEcDhLG6RQow1d6SMvspygRAq_UCpzff/n/gr8gkzaf8nit/b/bucket-euoraf4-site/o/2020-11-30-Configurando-OCI-CLI/user-ocid.png)
+
+Compartment OCID: Navegue até Identity>Compartment>Compartment Details
+
+![Compartment-Ocid](https://objectstorage.sa-saopaulo-1.oraclecloud.com/p/JKEwDkGRSm-IbJIVUlHz89Ozcw_pjs8kkl5SeoTkl_QzlyfId2wS1EiD_AaLwXXs/n/gr8gkzaf8nit/b/bucket-euoraf4-site/o/2020-11-30-Configurando-OCI-CLI/compartment-ocid.png)
+
+Tenancy OCID: Navegue até Administration>Compartment>Tenancy Details
+
+![Tenancy-Ocid](https://objectstorage.sa-saopaulo-1.oraclecloud.com/p/AgiXs372OaF4Jl9P2gdjVXpgceo-c_u7So_hh2oFnDolVOGFv3VwgCEniswKKxQB/n/gr8gkzaf8nit/b/bucket-euoraf4-site/o/2020-11-30-Configurando-OCI-CLI/tenancy-ocid.png)
 
 ```javascript
 oci setup config
