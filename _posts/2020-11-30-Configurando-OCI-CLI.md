@@ -11,6 +11,14 @@ comments: true
 | Uma conta Oracle Cloud | Obrigatório |
 | Python v2.7 ou superior | Obrigatório |
 
+{% highlight javascript linenos %}
+bash -c "$(curl -L https://raw.githubusercontent.com/oracle/oci-cli/master/scripts/install/install.sh)"
+{% endhighlight %}
+
+{% highlight javascript linenos %}
+powershell -NoProfile -ExecutionPolicy Bypass -Command "iex ((New-Object System.Net.WebClient).DownloadString('https://raw.githubusercontent.com/oracle/oci-cli/master/scripts/install/install.ps1'))"
+{% endhighlight %}
+
 This is a demo post to show you how to write blog posts with markdown.  I strongly encourage you to [take 5 minutes to learn how to write in markdown](https://markdowntutorial.com/) - it'll teach you how to transform regular text into bold/italics/headings/tables/etc.
 
 **Here is some bold text**
