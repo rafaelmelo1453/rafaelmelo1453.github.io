@@ -14,9 +14,8 @@ comments: true
 | Tenancy OCID | Obrigatório |
 | Compartment OCID | Obrigatório |
 | User OCID | Obrigatório |
-| Criar SSH Keys | Obrigatório |
 
-Baixando e instalando o CLI
+**Baixando e instalando o Oracle Cloud Infrastructure CLI**
 
 **MacOS/Linux**
 {% highlight javascript linenos %}
