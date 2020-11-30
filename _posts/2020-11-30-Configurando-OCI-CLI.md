@@ -40,7 +40,9 @@ Caso a instalação tenha sido bem sucedida receberá um output como esse.
 
 ## Configurando Oracle Cloud Infrastructure CLI
 
-Com o CLI instalado, agora é preciso configura-lo.
+Com o CLI instalado, agora é preciso configura-lo. Nesta etapa será necessário compartment OCID, tenancy OCID e user OCID.
+
+**Obtendo compartment OCID, tenancy OCID e user OCID**  
 
 ```javascript
 oci setup config
