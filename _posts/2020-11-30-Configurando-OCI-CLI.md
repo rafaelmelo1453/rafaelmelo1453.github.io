@@ -18,12 +18,12 @@ comments: true
 
 Aceite as configurações default ou personalize conforme a necessidade
 
-MacOS/Linux  
+**MacOS/Linux**  
 ```javascript
 bash -c "$(curl -L https://raw.githubusercontent.com/oracle/oci-cli/master/scripts/install/install.sh)"
 ```
 
-Windows  
+**Windows**  
 ```javascript
 powershell -NoProfile -ExecutionPolicy Bypass -Command "iex ((New-Object System.Net.WebClient).DownloadString('https://raw.githubusercontent.com/oracle/oci-cli/master/scripts/install/install.ps1'))"
 ```
