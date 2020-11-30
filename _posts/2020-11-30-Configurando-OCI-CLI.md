@@ -2,12 +2,11 @@
 layout: post
 title: Configurando OCI-CLI e 1º deploy de Instance VM
 subtitle: Após este tutorial você será capaz de acessar o OCI-CLI localmente e criar Instances VMs na Oracle Cloud
-tags: [Cloud, Oracle, OCI, CLI, Instance, VM, Windows, Linux, MacOs, Setup]
+tags: [Cloud, Oracle, OCI, CLI, Instance, VM, Windows, Linux, MacOs]
 comments: true
 ---
 
-
-**Requisitos**
+## Requisitos
 
 | Uma conta Oracle Cloud | Obrigatório |
 | Python v2.7 ou superior | Obrigatório |
@@ -15,7 +14,7 @@ comments: true
 | Compartment OCID | Obrigatório |
 | User OCID | Obrigatório |
 
-**Baixando e instalando o Oracle Cloud Infrastructure CLI**
+## Baixando e instalando o Oracle Cloud Infrastructure CLI
 
 Aceite as configurações default ou personalize conforme a necessidade
 
@@ -35,7 +34,7 @@ Verifique que a instalação foi bem sucedida.
 oci --help
 ```
 
-**Configurando Oracle Cloud Infrastructure CLI**
+## Configurando Oracle Cloud Infrastructure CLI
 
 Com o CLI instalado, agora é preciso configura-lo.
 
