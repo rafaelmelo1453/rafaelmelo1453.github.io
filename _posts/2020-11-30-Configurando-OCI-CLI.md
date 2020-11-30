@@ -6,7 +6,8 @@ tags: [Cloud, Oracle, OCI, CLI, Instance, VM, Windows, Linux, MacOs Setup]
 comments: true
 ---
 
-## Requisitos \
+## Requisitos
+
 | Uma conta Oracle Cloud | Obrigatório |
 | Python v2.7 ou superior | Obrigatório |
   
