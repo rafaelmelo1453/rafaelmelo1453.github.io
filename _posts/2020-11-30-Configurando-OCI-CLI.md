@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Configurando OCI-CLI e fazendo seu primeiro deploy de Instance VM
+title: Configurando OCI-CLI e fazendo 1º deploy de Instance VM
 subtitle: Após este tutorial você será capaz de acessar o OCI-CLI localmente e criar Instances VMs na Oracle Cloud
 tags: [Cloud, Oracle, OCI, CLI, Command, Setup]
 comments: true
