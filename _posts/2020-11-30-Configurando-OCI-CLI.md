@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Configurando OCI-CLI (Oracle Cloud Infrastructure - Command Line Interface)
-subtitle: Com o OCI-CLI configurado agilize o provisionamento de recursos na Oracle Cloud. 
+subtitle: Oracle Cloud Infrastructure - Command Line Interface
 tags: [Cloud, Oracle, OCI, CLI, Command, Setup]
 comments: true
 ---
