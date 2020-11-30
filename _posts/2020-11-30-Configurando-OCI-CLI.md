@@ -18,14 +18,14 @@ comments: true
 **Baixando e instalando o Oracle Cloud Infrastructure CLI**
 
 **MacOS/Linux**
-{% highlight javascript linenos %}
+```javascript
 bash -c "$(curl -L https://raw.githubusercontent.com/oracle/oci-cli/master/scripts/install/install.sh)"
-{% endhighlight %}
+```
 
 **Windows**
-{% highlight javascript linenos %}
+```javascript
 powershell -NoProfile -ExecutionPolicy Bypass -Command "iex ((New-Object System.Net.WebClient).DownloadString('https://raw.githubusercontent.com/oracle/oci-cli/master/scripts/install/install.ps1'))"
-{% endhighlight %}
+```
 
 Aceite os directorios padrão ou personalize conforme a necessidade.
 
