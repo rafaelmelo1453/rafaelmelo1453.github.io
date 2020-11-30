@@ -16,6 +16,7 @@ comments: true
 | User OCID | Obrigatório |
 
 **Baixando e instalando o Oracle Cloud Infrastructure CLI**
+
 **MacOS/Linux**
 {% highlight javascript linenos %}
 bash -c "$(curl -L https://raw.githubusercontent.com/oracle/oci-cli/master/scripts/install/install.sh)"
@@ -25,8 +26,12 @@ bash -c "$(curl -L https://raw.githubusercontent.com/oracle/oci-cli/master/scrip
 {% highlight javascript linenos %}
 powershell -NoProfile -ExecutionPolicy Bypass -Command "iex ((New-Object System.Net.WebClient).DownloadString('https://raw.githubusercontent.com/oracle/oci-cli/master/scripts/install/install.ps1'))"
 {% endhighlight %}
-  
-This is a demo post to show you how to write blog posts with markdown.  I strongly encourage you to [take 5 minutes to learn how to write in markdown](https://markdowntutorial.com/) - it'll teach you how to transform regular text into bold/italics/headings/tables/etc.
+
+Aceite os directorios padrão ou personalize conforme a necessidade.
+
+```javascript
+oci --help
+```
 
 **Here is some bold text**
 
