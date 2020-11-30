@@ -1,10 +1,15 @@
 ---
 layout: post
-title: Configurando OCI-CLI e fazendo 1º deploy de Instance VM
+title: Configurando OCI-CLI e 1º deploy de Instance VM
 subtitle: Após este tutorial você será capaz de acessar o OCI-CLI localmente e criar Instances VMs na Oracle Cloud
 tags: [Cloud, Oracle, OCI, CLI, Command, Setup]
 comments: true
 ---
+
+**Requisitos**
+
+| Uma conta Oracle Cloud | Obrigatório |
+| Python versões v2.7 ou superior | Obrigatório |
 
 This is a demo post to show you how to write blog posts with markdown.  I strongly encourage you to [take 5 minutes to learn how to write in markdown](https://markdowntutorial.com/) - it'll teach you how to transform regular text into bold/italics/headings/tables/etc.
 
