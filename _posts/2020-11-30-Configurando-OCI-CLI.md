@@ -35,6 +35,12 @@ Verifique que a instalacao foi bem sucedida.
 oci --help
 ```
 
+**Configurando Oracle Cloud Infrastructure CLI**
+
+```javascript
+oci setup config
+```
+
 **Here is some bold text**
 
 ## Here is a secondary heading
