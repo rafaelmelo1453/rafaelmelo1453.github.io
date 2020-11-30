@@ -8,6 +8,7 @@ comments: true
 
 ## Requisitos
 
+
 | Uma conta Oracle Cloud | Obrigatório |
 | Python v2.7 ou superior | Obrigatório |
 
