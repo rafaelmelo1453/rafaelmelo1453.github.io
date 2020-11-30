@@ -7,14 +7,14 @@ comments: true
 ---
 
 ## Requisitos
-  
+\
 | Uma conta Oracle Cloud | Obrigatório |
 | Python v2.7 ou superior | Obrigatório |
-
+\
 {% highlight javascript linenos %}
 bash -c "$(curl -L https://raw.githubusercontent.com/oracle/oci-cli/master/scripts/install/install.sh)"
 {% endhighlight %}
-
+\
 {% highlight javascript linenos %}
 powershell -NoProfile -ExecutionPolicy Bypass -Command "iex ((New-Object System.Net.WebClient).DownloadString('https://raw.githubusercontent.com/oracle/oci-cli/master/scripts/install/install.ps1'))"
 {% endhighlight %}
