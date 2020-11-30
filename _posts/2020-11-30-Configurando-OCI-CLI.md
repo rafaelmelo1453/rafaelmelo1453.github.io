@@ -11,6 +11,10 @@ comments: true
 
 | Uma conta Oracle Cloud | Obrigatório |
 | Python v2.7 ou superior | Obrigatório |
+| Tenancy OCID | Obrigatório |
+| Compartment OCID | Obrigatório |
+| User OCID | Obrigatório |
+| Criar SSH Keys | Obrigatório |
 
 Baixando e instalando o CLI
 
