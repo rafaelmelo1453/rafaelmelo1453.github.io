@@ -9,9 +9,10 @@ comments: true
 
 ## Requisitos
 
-
 | Uma conta Oracle Cloud | Obrigatório |
 | Python v2.7 ou superior | Obrigatório |
+
+Baixando e instalando o CLI
 
 **MacOS/Linux**
 {% highlight javascript linenos %}
