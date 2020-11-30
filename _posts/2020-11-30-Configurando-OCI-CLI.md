@@ -17,7 +17,8 @@ comments: true
 
 **Baixando e instalando o Oracle Cloud Infrastructure CLI**
 
-MacOS/Linux
+MacOS/Linux  
+
 ```javascript
 bash -c "$(curl -L https://raw.githubusercontent.com/oracle/oci-cli/master/scripts/install/install.sh)"
 ```
