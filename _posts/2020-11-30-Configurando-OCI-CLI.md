@@ -17,6 +17,8 @@ comments: true
 
 **Baixando e instalando o Oracle Cloud Infrastructure CLI**
 
+Aceite as configurações default ou personalize conforme a necessidade
+
 MacOS/Linux  
 ```javascript
 bash -c "$(curl -L https://raw.githubusercontent.com/oracle/oci-cli/master/scripts/install/install.sh)"
@@ -27,8 +29,6 @@ Windows
 powershell -NoProfile -ExecutionPolicy Bypass -Command "iex ((New-Object System.Net.WebClient).DownloadString('https://raw.githubusercontent.com/oracle/oci-cli/master/scripts/install/install.ps1'))"
 ```
 
-Aceite as configurações default ou personalize conforme a necessidade.
-
 Verifique que a instalacao foi bem sucedida. 
 
 ```javascript
@@ -36,6 +36,7 @@ oci --help
 ```
 
 **Configurando Oracle Cloud Infrastructure CLI**
+Com o CLI instalado, agora é preciso configura-lo. 
 
 ```javascript
 oci setup config
