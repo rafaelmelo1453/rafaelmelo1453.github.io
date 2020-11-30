@@ -35,7 +35,7 @@ Verifique que a instalacao foi bem sucedida.
 oci --help
 ```
 
-**Configurando Oracle Cloud Infrastructure CLI**
+**Configurando Oracle Cloud Infrastructure CLI**/
 Com o CLI instalado, agora é preciso configura-lo. 
 
 ```javascript
