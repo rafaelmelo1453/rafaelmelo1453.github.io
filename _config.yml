@@ -14,7 +14,7 @@ author: Rafael Melo
 # --- List of links in the navigation bar --- #
 
 navbar-links:
-  Sobre Mim: "sobremim"
+  Sobre Mim: "aboutme"
 #  Resources:
 #    - Beautiful Jekyll: "https://beautifuljekyll.com"
 #    - Learn markdown: "https://www.markdowntutorial.com/"
