@@ -60,6 +60,8 @@ Tenancy OCID: Navegue até Administration>Compartment>Tenancy Details
 oci setup config
 ```
 
+![Oci-Setup](https://objectstorage.sa-saopaulo-1.oraclecloud.com/p/bK6kRk2QQgt2yeztuQCOxnuqU_hYkMGPhcLsMUwKfsLCNNijXp_Rk-JRMM3v8okQ/n/gr8gkzaf8nit/b/bucket-euoraf4-site/o/2020-11-30-Configurando-OCI-CLI/oci-setup-config.png)
+
 **Here is some bold text**
 
 ## Here is a secondary heading
