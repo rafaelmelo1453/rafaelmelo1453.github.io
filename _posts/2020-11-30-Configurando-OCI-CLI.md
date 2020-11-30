@@ -6,7 +6,7 @@ tags: [Cloud, Oracle, OCI, CLI, Command, Setup]
 comments: true
 ---
 
-**Requisitos**
+## Requisitos
 
 | Uma conta Oracle Cloud | Obrigatório |
 | Python versões v2.7 ou superior | Obrigatório |
