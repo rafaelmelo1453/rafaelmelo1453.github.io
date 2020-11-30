@@ -16,7 +16,6 @@ comments: true
 | User OCID | Obrigatório |
 
 **Baixando e instalando o Oracle Cloud Infrastructure CLI**
-
 **MacOS/Linux**
 {% highlight javascript linenos %}
 bash -c "$(curl -L https://raw.githubusercontent.com/oracle/oci-cli/master/scripts/install/install.sh)"
