@@ -15,7 +15,7 @@ comments: true
 | Compartment OCID | Obrigatório |
 | User OCID | Obrigatório |
 
-**Baixando e instalando o Oracle Cloud Infrastructure CLI**
+## Baixando e instalando o Oracle Cloud Infrastructure CLI
 
 **MacOS/Linux**
 ```javascript
