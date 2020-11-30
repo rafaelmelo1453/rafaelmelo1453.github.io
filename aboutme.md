@@ -12,7 +12,7 @@ Meu nome é Rafael Melo. Engenheiro de Computação, Pós-graduando em Gestão d
 - Linux
 - ITIL® 4
 - Network
-- Devops
+- DevOps
 - Firewall
 - Datacenter
 - SolarWinds
