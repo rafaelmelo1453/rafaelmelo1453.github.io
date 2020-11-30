@@ -34,6 +34,8 @@ Verifique que a instalação foi bem sucedida.
 oci --help
 ```
 
+Caso a instalação tenha sido bem sucedida receberá um output como esse.
+
 ![Oci-Help](https://objectstorage.sa-saopaulo-1.oraclecloud.com/p/F4ceppVSvIlaAfzCmhLvVjXEeykRzrH61nScYp9Ayn7_WBxtbfar7VaejUbW0-11/n/gr8gkzaf8nit/b/bucket-euoraf4-site/o/2020-11-30-Configurando-OCI-CLI/oci-helpoci-help.png)
 
 ## Configurando Oracle Cloud Infrastructure CLI
