@@ -29,7 +29,7 @@ Windows
 powershell -NoProfile -ExecutionPolicy Bypass -Command "iex ((New-Object System.Net.WebClient).DownloadString('https://raw.githubusercontent.com/oracle/oci-cli/master/scripts/install/install.ps1'))"
 ```
 
-Verifique que a instalacao foi bem sucedida. 
+Verifique que a instalação foi bem sucedida. 
 
 ```javascript
 oci --help
@@ -37,7 +37,7 @@ oci --help
 
 **Configurando Oracle Cloud Infrastructure CLI**
 
-Com o CLI instalado, agora é preciso configura-lo. 
+Com o CLI instalado, agora é preciso configura-lo.
 
 ```javascript
 oci setup config
@@ -59,7 +59,7 @@ Here's a useless table:
 
 How about a yummy crepe?
 
-![Crepe](https://s3-media3.fl.yelpcdn.com/bphoto/cQ1Yoa75m2yUFFbY2xwuqw/348s.jpg)
+![Crepe](https://objectstorage.sa-saopaulo-1.oraclecloud.com/p/dv6MDY-DTGQtoeo26DVjErDksfva4g8eJbFILaPg87ZPSpIDgFHTio5F89ZO_MtH/n/gr8gkzaf8nit/b/bucket-euoraf4-site/o/photo01Captura%20de%20Tela%202020-11-30%20a%CC%80s%2010.56.39.png)
 
 It can also be centered!
 
