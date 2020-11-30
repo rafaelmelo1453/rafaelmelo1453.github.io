@@ -7,7 +7,7 @@ comments: true
 ---
 
 
-## Requisitos
+**Requisitos**
 
 | Uma conta Oracle Cloud | Obrigatório |
 | Python v2.7 ou superior | Obrigatório |
@@ -28,6 +28,8 @@ powershell -NoProfile -ExecutionPolicy Bypass -Command "iex ((New-Object System.
 ```
 
 Aceite as configurações default ou personalize conforme a necessidade.
+
+Verifique que a instalacao foi bem sucedida. 
 
 ```javascript
 oci --help
