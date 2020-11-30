@@ -34,6 +34,8 @@ Verifique que a instalação foi bem sucedida.
 oci --help
 ```
 
+![Oci-Help](https://objectstorage.sa-saopaulo-1.oraclecloud.com/p/F4ceppVSvIlaAfzCmhLvVjXEeykRzrH61nScYp9Ayn7_WBxtbfar7VaejUbW0-11/n/gr8gkzaf8nit/b/bucket-euoraf4-site/o/2020-11-30-Configurando-OCI-CLI/oci-helpoci-help.png)
+
 ## Configurando Oracle Cloud Infrastructure CLI
 
 Com o CLI instalado, agora é preciso configura-lo.
@@ -58,7 +60,7 @@ Here's a useless table:
 
 How about a yummy crepe?
 
-![Crepe](https://objectstorage.sa-saopaulo-1.oraclecloud.com/p/dv6MDY-DTGQtoeo26DVjErDksfva4g8eJbFILaPg87ZPSpIDgFHTio5F89ZO_MtH/n/gr8gkzaf8nit/b/bucket-euoraf4-site/o/photo01Captura%20de%20Tela%202020-11-30%20a%CC%80s%2010.56.39.png)
+![Oci-Help](https://objectstorage.sa-saopaulo-1.oraclecloud.com/p/F4ceppVSvIlaAfzCmhLvVjXEeykRzrH61nScYp9Ayn7_WBxtbfar7VaejUbW0-11/n/gr8gkzaf8nit/b/bucket-euoraf4-site/o/2020-11-30-Configurando-OCI-CLI/oci-helpoci-help.png)
 
 It can also be centered!
 
