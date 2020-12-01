@@ -118,6 +118,12 @@ $ oci iam compartment list
 
 ![Compartment-List](https://objectstorage.sa-saopaulo-1.oraclecloud.com/p/FmAMKaP-SLgK1KhRNlVZGlXRsg0qTQD0PPydkh4BnKz7z7R3Usd8p64-Td6J0Jpc/n/gr8gkzaf8nit/b/bucket-euoraf4-site/o/2020-11-30-Configurando-OCI-CLI/compartment-list.png)
 
+## Deploy de uma Instance VM com OCI-CLI
+
+```javascript
+$ oci iam compartment list
+```
+
 **Here is some bold text**
 
 ## Here is a secondary heading
