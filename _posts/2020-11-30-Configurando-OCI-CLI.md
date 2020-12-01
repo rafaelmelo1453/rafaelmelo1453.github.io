@@ -134,25 +134,33 @@ Para essa task será necessario as seguintes recursos:
 | Display Name | Defina um Nome | 
 | SSH Key | Gerar no Deploy |
 
-Availability Domain: Salve o OCID do availability domain.
+**Availability Domain:** Salve o OCID do availability domain.
 
 ```javascript
 $ oci iam availability-domain list --query "data [*].{\"Name\":\"name\"}" --output table
 ```
 
-Compartimet: Salve o OCID do compartment que deseja criar a Instance VM.
+**Compartimet OCID:** Salve o OCID do compartment que deseja criar a Instance VM.
 
 ```javascript
 $ oci iam compartment list --lifecycle-state active --query "data [*].{\"Name\":\"name\",\"id\":\"id\"}" --output table
 ```
 
-Subnet: Substitua o valor do --compartment-id pela OCID do compartiment listado acima onde sua subnet está alocada.
+**Subnet OCID:** Substitua o valor do --compartment-id pela OCID do compartiment listado acima onde sua subnet está alocada. Salve o OCID da subnet.
 
 ```javascript
 $ oci network subnet list --compartment-id ocid1.compartment.oc1..aaaaaaaa2tjqxvk2oxw45php23trjixcrzwb3bhzhcw4qqjpjcpvozny6mza --query "data [*].{\"Name\":\"display-name\",\"id\":\"id\"}" --output table
 ```
 
-Shape: Escolha o shape da Instance VM, você pode consultar todos os shapes disponíveis no site oficial [Oracle Cloud Infrastructure](https://docs.cloud.oracle.com/en-us/iaas/Content/Compute/References/computeshapes.htm)
+**Imagem OCID:** Substitua o valor do --compartment-id pela OCID do compartiment listado acima onde será realizado o deploy da Instance VM. Salve o OCID da imagem desejada, nesta task será utilizada a Oracle-Linux-7.9-2020.11.10-1.
+
+```javascript
+$ oci compute image list --compartment-id ocid1.compartment.oc1..aaaaaaaayu2eqzztrf7nrvi2dc5h2vl2rw2xoqphiucblfg7ossq7rzc5wsq --query "data [?contains(\"display-name\",'Oracle-Linux')] | [?contains(\"display-name\",'GPU') == \`false\`].{\"IMAGE\":\"display-name\",\"ID\":\"id\"}" --output table
+```
+
+**Shape:** Utilize o shape **Always Free** para testes, consulte todos os shapes disponíveis no site oficial [Oracle Cloud Infrastructure.](https://docs.cloud.oracle.com/en-us/iaas/Content/Compute/References/computeshapes.htm)
+
+![Resources-Get](https://objectstorage.sa-saopaulo-1.oraclecloud.com/p/pACSZBitORcnthvHOrTAg4R5nFyflz6fP3Es08mvZ4kxE8nwsYt10ZzAcwRwpHDY/n/gr8gkzaf8nit/b/bucket-euoraf4-site/o/2020-11-30-Configurando-OCI-CLI/resource-get.png)
 
 Inicie criando um diretorio para armazenar a SSH Key.
 
