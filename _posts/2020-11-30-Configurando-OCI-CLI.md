@@ -44,7 +44,7 @@ Com o CLI instalado, agora é preciso configura-lo. Nesta etapa será necessári
 
 **Obtendo User OCID, Compartmet OCID e Tenancy OCID** 
 
-User OCID: Navegue até Identity>Users>User Details
+User OCID: Navegue até Identity>Users>Seu User
 
 ![User-Ocid](https://objectstorage.sa-saopaulo-1.oraclecloud.com/p/np_zGbe9Zaz9UINKmPcGJhRIxsGrUHuVEEcDhLG6RQow1d6SMvspygRAq_UCpzff/n/gr8gkzaf8nit/b/bucket-euoraf4-site/o/2020-11-30-Configurando-OCI-CLI/user-ocid.png)
 
@@ -67,13 +67,13 @@ Nesta etapa será criada uma API Keys e será utilizado a public key recém cria
 
 **MacOS/Linux**
 
-Preecha com as suas infomações (caminho/nome da public key) apontadas no momento da confinguração.
+Preencha com as suas infomações (caminho/nome da public key) apontadas no momento da confinguração.
 
 ```javascript
 $cd /home/ubuntu/.oci/
 $vim oci_api_key_public.pem 
 ```
-Copie o conteudo da completo da Public Key.
+Copie o conteúdo completo da Public Key.
 
 ![Public-Key](https://objectstorage.sa-saopaulo-1.oraclecloud.com/p/vOVDjB3xmwdJUYLaQRSVXluCGDaCtPUbN0gv6At8kYdtnrgLK5wJSptvLISA0nxT/n/gr8gkzaf8nit/b/bucket-euoraf4-site/o/2020-11-30-Configurando-OCI-CLI/public-key.png)
 
@@ -83,7 +83,11 @@ Abra a Public Key no notepad e copie todo o conteúdo.
 
 ![Public-Key-Windows](https://objectstorage.sa-saopaulo-1.oraclecloud.com/p/vOVDjB3xmwdJUYLaQRSVXluCGDaCtPUbN0gv6At8kYdtnrgLK5wJSptvLISA0nxT/n/gr8gkzaf8nit/b/bucket-euoraf4-site/o/2020-11-30-Configurando-OCI-CLI/public-key.png)
 
+Acesse a console Oracle Cloud e vá atá o caminho Identity>Users>Seu User>API Keys>Add API Key.
 
+Selecione "Paste Public Key", cole o conteúdo da Public Key e clique em Add.
+
+![Api-Key](https://objectstorage.sa-saopaulo-1.oraclecloud.com/p/GFEO45ZEfNHoh4PEG-JULwJJ5h-sPIdLFyc8kRyIUiPalFoyrwEd4CdkCPVZhnT2/n/gr8gkzaf8nit/b/bucket-euoraf4-site/o/2020-11-30-Configurando-OCI-CLI/api-key.png)
 
 **Here is some bold text**
 
