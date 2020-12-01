@@ -93,12 +93,22 @@ Após adicionada a API Key é gerada um Fingerprint.
 
 ![Finger-Print](https://objectstorage.sa-saopaulo-1.oraclecloud.com/p/J-fdWrzqA79ic4IYMXvSTJg0gslBP0R1KeGY4wfuY0jFus4Kx0ZTago6Uhi2QtJc/n/gr8gkzaf8nit/b/bucket-euoraf4-site/o/2020-11-30-Configurando-OCI-CLI/fingerprint.png)
 
+Visualize o arquivo de configuração.
+
+**MacOS/Linux**
+
 ```javascript
 $ cd /home/ubuntu/.oci/
 $ cat config
 ```
 
 ![Config-Cat](https://objectstorage.sa-saopaulo-1.oraclecloud.com/p/_lwIp6-5dKk3T88FatdDxNqx1NI-tIFsVW8NJZiUhub6_osYh_HQdSMSSJOzQihy/n/gr8gkzaf8nit/b/bucket-euoraf4-site/o/2020-11-30-Configurando-OCI-CLI/config.png)
+
+**Windows**
+
+Navegue até a pasta do arquivo config e abra com notepad.
+
+![Config-Cat](https://objectstorage.sa-saopaulo-1.oraclecloud.com/p/LiMhge013qH3ZWayFF2TAQDUfTgTDmA7pLz4Qd11xqP-M519D28-fLXdFwFtMegV/n/gr8gkzaf8nit/b/bucket-euoraf4-site/o/2020-11-30-Configurando-OCI-CLI/config-windows.png)
 
 **Here is some bold text**
 
