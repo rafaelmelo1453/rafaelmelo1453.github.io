@@ -102,13 +102,13 @@ $ cd /home/ubuntu/.oci/
 $ cat config
 ```
 
-![Config-Cat](https://objectstorage.sa-saopaulo-1.oraclecloud.com/p/_lwIp6-5dKk3T88FatdDxNqx1NI-tIFsVW8NJZiUhub6_osYh_HQdSMSSJOzQihy/n/gr8gkzaf8nit/b/bucket-euoraf4-site/o/2020-11-30-Configurando-OCI-CLI/config.png)
+![Config-Cat](https://objectstorage.sa-saopaulo-1.oraclecloud.com/p/QP1n5BBih4rC9YNK2DSH5bS3xtB5NJZSqtGeIsJr-xsNbuZqbf1ucSKhplx_QIm7/n/gr8gkzaf8nit/b/bucket-euoraf4-site/o/2020-11-30-Configurando-OCI-CLI/config.png)
 
 **Windows**
 
 Navegue até a pasta do arquivo config e abra com notepad.
 
-![Config-Cat](https://objectstorage.sa-saopaulo-1.oraclecloud.com/p/LiMhge013qH3ZWayFF2TAQDUfTgTDmA7pLz4Qd11xqP-M519D28-fLXdFwFtMegV/n/gr8gkzaf8nit/b/bucket-euoraf4-site/o/2020-11-30-Configurando-OCI-CLI/config-windows.png)
+![Config-Cat](https://objectstorage.sa-saopaulo-1.oraclecloud.com/p/uEdpaH0pQjgD4EQ04W7AqkVGFTqKIkaWt180qI7FpypikIpvb46_hukwPIV3qbT3/n/gr8gkzaf8nit/b/bucket-euoraf4-site/o/2020-11-30-Configurando-OCI-CLI/config-windows.png)
 
 **Here is some bold text**
 
