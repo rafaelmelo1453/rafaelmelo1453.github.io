@@ -120,13 +120,27 @@ $ oci iam compartment list
 
 ## Deploy de uma Instance VM com OCI-CLI
 
-Crie um diretorio para armazenar a SSH Key.
+Após instalar, configurar e certificar-se que tudo funciona bem com OCI-CLI, siga os passos abaixo para criar uma Instance VM via CLI.
+
+Para essa task será necessario as seguintes informações:
+
+| Recurso | Onde Conserguir |
+| :------ |:--- |
+| Availability Domain | Console Oracle Cloud |
+| Compartment OCID | Console Oracle Cloud |
+| Subnet OCID | Console Oracle Cloud |
+| Shape OCID | Console Oracle Cloud |
+| Image OCID | Site Oracle |
+| Display Name | Defina um Nome | 
+| SSH Key | Gerar no Deploy |
+
+Inicie criando um diretorio para armazenar a SSH Key.
 
 ```javascript
 $ mkdir keys
 ```
 
-Crie uma SSH Key.
+Gere uma nova SSH Key.
 
 ```javascript
 $ ssh-keygen -t rsa -N "" -b 2048 -C "CiCd-Compute-Instance" -f /home/ubuntu/keys/key-test
@@ -138,12 +152,20 @@ Faça o deploy da Instance VM na OCI.
 $ oci compute instance launch --availability-domain syxp:SA-SAOPAULO-1-AD-1 --compartment-id ocid1.compartment.oc1..aaaaaaaa2tjqxvk2oxw45php23trjixcrzwb3bhzhcw4qqjpjcpvozny6mza --shape VM.Standard.E2.1.Micro --subnet-id ocid1.subnet.oc1.sa-saopaulo-1.aaaaaaaa2j4d7too2lkyjtlzujdegwl3m37tpoqxilnsyunykc2nh3fy65kq --image-id ocid1.image.oc1.sa-saopaulo-1.aaaaaaaa7inha53kcyutiqdbz3w4gvms2ab5z3bc624loheugh7fbvg4wada --assign-public-ip true --display-name instance-vm-teste --ssh-authorized-keys-file /home/ubuntu/keys/key-test.pub
 ```
 
+Aguarde até que o estado da Intance VM seja Running.
+
+![VM-Provi](https://objectstorage.sa-saopaulo-1.oraclecloud.com/p/uFBtSSpKLs3ENerlca0jXrbENvMSLpLtW1BO4P8xH2K7-vTNg96n4E75He7du8Rn/n/gr8gkzaf8nit/b/bucket-euoraf4-site/o/2020-11-30-Configurando-OCI-CLI/vm-provi.png)
+
+![VM-Run](https://objectstorage.sa-saopaulo-1.oraclecloud.com/p/OjOqNQ0NTBbAZyzEqp_LkbzdUI5YGrBrJFFZuzM7bIGfr-Q3HIh1sMS_v6vPytfB/n/gr8gkzaf8nit/b/bucket-euoraf4-site/o/2020-11-30-Configurando-OCI-CLI/vm-run.png)
+
 Acesse a Instance VM recém criada.
 
 ```javascript
 $ chmod 400 /home/ubuntu/keys/key-test
 $ ssh -i /home/ubuntu/keys/key-test opc@168.138.148.108
 ```
+
+
 
 **Here is some bold text**
 
