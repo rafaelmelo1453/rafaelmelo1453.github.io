@@ -40,17 +40,13 @@ Caso a instalação tenha sido bem sucedida receberá um output como esse.
 
 ## Configurando Oracle Cloud Infrastructure CLI
 
-Com o CLI instalado, agora é preciso configura-lo. Nesta etapa será necessário compartment OCID, tenancy OCID e user OCID.
+Com o CLI instalado, agora é preciso configura-lo. Nesta etapa será necessário user OCID e tenancy OCID.
 
-**Obtendo User OCID, Compartmet OCID e Tenancy OCID** 
+**Obtendo User OCID e Tenancy OCID** 
 
 User OCID: Navegue até Identity>Users>Seu User
 
 ![User-Ocid](https://objectstorage.sa-saopaulo-1.oraclecloud.com/p/np_zGbe9Zaz9UINKmPcGJhRIxsGrUHuVEEcDhLG6RQow1d6SMvspygRAq_UCpzff/n/gr8gkzaf8nit/b/bucket-euoraf4-site/o/2020-11-30-Configurando-OCI-CLI/user-ocid.png)
-
-Compartment OCID: Navegue até Identity>Compartment>Compartment Details
-
-![Compartment-Ocid](https://objectstorage.sa-saopaulo-1.oraclecloud.com/p/JKEwDkGRSm-IbJIVUlHz89Ozcw_pjs8kkl5SeoTkl_QzlyfId2wS1EiD_AaLwXXs/n/gr8gkzaf8nit/b/bucket-euoraf4-site/o/2020-11-30-Configurando-OCI-CLI/compartment-ocid.png)
 
 Tenancy OCID: Navegue até Administration>Compartment>Tenancy Details
 
@@ -127,10 +123,10 @@ Para essa task será necessario as seguintes recursos:
 | Recurso | Onde Conserguir |
 | :------ |:--- |
 | Availability Domain | CLI-OCI |
-| Compartment OCID | Console Oracle Cloud |
-| Subnet OCID | Console Oracle Cloud |
-| Shape OCID | Console Oracle Cloud |
-| Image OCID | Site Oracle Cloud |
+| Compartment OCID | CLI-OCI |
+| Subnet OCID | CLI-OCId |
+| Shape OCID | Site Oracle Cloud |
+| Image OCID | CLI-OCI |
 | Display Name | Defina um Nome | 
 | SSH Key | Gerar no Deploy |
 
@@ -162,6 +158,8 @@ $ oci compute image list --compartment-id ocid1.compartment.oc1..aaaaaaaayu2eqzz
 
 ![Resources-Get](https://objectstorage.sa-saopaulo-1.oraclecloud.com/p/pACSZBitORcnthvHOrTAg4R5nFyflz6fP3Es08mvZ4kxE8nwsYt10ZzAcwRwpHDY/n/gr8gkzaf8nit/b/bucket-euoraf4-site/o/2020-11-30-Configurando-OCI-CLI/resource-get.png)
 
+**Iniciando Deploy da Instance VM**
+
 Inicie criando um diretorio para armazenar a SSH Key.
 
 ```javascript
@@ -192,72 +190,3 @@ Acesse a Instance VM recém criada.
 $ chmod 400 /home/ubuntu/keys/key-test
 $ ssh -i /home/ubuntu/keys/key-test opc@168.138.148.108
 ```
-
-
-
-**Here is some bold text**
-
-## Here is a secondary heading
-
-Here's a useless table:
-
-| Number | Next number | Previous numbe |
-| :------ |:--- | :--- |
-| Five | Six | Four |
-| Ten | Eleven | Nine |
-| Seven | Eight | Six |
-| Two | Three | One |
-
-
-How about a yummy crepe?
-
-![Oci-Help](https://objectstorage.sa-saopaulo-1.oraclecloud.com/p/F4ceppVSvIlaAfzCmhLvVjXEeykRzrH61nScYp9Ayn7_WBxtbfar7VaejUbW0-11/n/gr8gkzaf8nit/b/bucket-euoraf4-site/o/2020-11-30-Configurando-OCI-CLI/oci-helpoci-help.png)
-
-It can also be centered!
-
-![Crepe](https://s3-media3.fl.yelpcdn.com/bphoto/cQ1Yoa75m2yUFFbY2xwuqw/348s.jpg){: .mx-auto.d-block :}
-
-Here's a code chunk:
-
-~~~
-var foo = function(x) {
-  return(x + 5);
-}
-foo(3)
-~~~
-
-And here is the same code with syntax highlighting:
-
-```javascript
-var foo = function(x) {
-  return(x + 5);
-}
-foo(3)
-```
-
-And here is the same code yet again but with line numbers:
-
-{% highlight javascript linenos %}
-var foo = function(x) {
-  return(x + 5);
-}
-foo(3)
-{% endhighlight %}
-
-## Boxes
-You can add notification, warning and error boxes like this:
-
-### Notification
-
-{: .box-note}
-**Note:** This is a notification box.
-
-### Warning
-
-{: .box-warning}
-**Warning:** This is a warning box.
-
-### Error
-
-{: .box-error}
-**Error:** This is an error box.
