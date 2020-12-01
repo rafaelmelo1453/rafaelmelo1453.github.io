@@ -125,10 +125,10 @@ Para essa task será necessario as seguintes recursos:
 | Availability Domain | CLI-OCI |
 | Compartment OCID | CLI-OCI |
 | Subnet OCID | CLI-OCId |
-| Shape OCID | Site Oracle Cloud |
 | Image OCID | CLI-OCI |
+| Name Shape | Site Oracle Cloud |
 | Display Name | Defina um Nome | 
-| SSH Key | Gerar no Deploy |
+| SSH Key | Gerar durante Deploy |
 
 **Availability Domain:** Salve o OCID do availability domain.
 
@@ -148,7 +148,7 @@ $ oci iam compartment list --lifecycle-state active --query "data [*].{\"Name\":
 $ oci network subnet list --compartment-id ocid1.compartment.oc1..aaaaaaaa2tjqxvk2oxw45php23trjixcrzwb3bhzhcw4qqjpjcpvozny6mza --query "data [*].{\"Name\":\"display-name\",\"id\":\"id\"}" --output table
 ```
 
-**Imagem OCID:** Substitua o valor do --compartment-id pela OCID do compartiment listado acima onde será realizado o deploy da Instance VM. Salve o OCID da imagem desejada, nesta task será utilizada a Oracle-Linux-7.9-2020.11.10-1.
+**Imagem OCID:** Substitua o valor do --compartment-id pela OCID do compartiment listado acima onde será realizado o deploy da Instance VM. Salve o OCID da imagem desejada, nesta task será utilizada a Oracle-Linux-7.9-2020.11.10-1, mas é possível escolher qualquer [imagem disponível na Oracle Cloud Infrastructure](https://docs.cloud.oracle.com/en-us/iaas/images/).
 
 ```javascript
 $ oci compute image list --compartment-id ocid1.compartment.oc1..aaaaaaaayu2eqzztrf7nrvi2dc5h2vl2rw2xoqphiucblfg7ossq7rzc5wsq --query "data [?contains(\"display-name\",'Oracle-Linux')] | [?contains(\"display-name\",'GPU') == \`false\`].{\"IMAGE\":\"display-name\",\"ID\":\"id\"}" --output table
@@ -166,13 +166,13 @@ Inicie criando um diretorio para armazenar a SSH Key.
 $ mkdir keys
 ```
 
-Gere uma nova SSH Key.
+Gerando uma nova SSH Key.
 
 ```javascript
 $ ssh-keygen -t rsa -N "" -b 2048 -C "CiCd-Compute-Instance" -f /home/ubuntu/keys/key-test
 ```
 
-Faça o deploy da Instance VM na OCI.
+Faça o deploy da Instance VM utilizando as informações salvas anteriomente availability-domain, compartment-id, shape, subnet-id, image-id, display-name, ssh-authorized-keys-file e adicione o parâmetro assign-public-ip como true para que seja atribuído um IP publico na Instance VM.
 
 ```javascript
 $ oci compute instance launch --availability-domain syxp:SA-SAOPAULO-1-AD-1 --compartment-id ocid1.compartment.oc1..aaaaaaaa2tjqxvk2oxw45php23trjixcrzwb3bhzhcw4qqjpjcpvozny6mza --shape VM.Standard.E2.1.Micro --subnet-id ocid1.subnet.oc1.sa-saopaulo-1.aaaaaaaa2j4d7too2lkyjtlzujdegwl3m37tpoqxilnsyunykc2nh3fy65kq --image-id ocid1.image.oc1.sa-saopaulo-1.aaaaaaaa7inha53kcyutiqdbz3w4gvms2ab5z3bc624loheugh7fbvg4wada --assign-public-ip true --display-name instance-vm-teste --ssh-authorized-keys-file /home/ubuntu/keys/key-test.pub
