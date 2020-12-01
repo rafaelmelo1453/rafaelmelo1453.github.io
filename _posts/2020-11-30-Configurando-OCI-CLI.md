@@ -16,7 +16,7 @@ comments: true
 
 ## Baixando e instalando o Oracle Cloud Infrastructure CLI
 
-Aceite as configurações default ou personalize conforme a necessidade
+Aceite as configurações default ou personalize conforme a necessidade.
 
 **MacOS/Linux**  
 ```javascript
@@ -56,10 +56,28 @@ Tenancy OCID: Navegue até Administration>Compartment>Tenancy Details
 
 ![Tenancy-Ocid](https://objectstorage.sa-saopaulo-1.oraclecloud.com/p/AgiXs372OaF4Jl9P2gdjVXpgceo-c_u7So_hh2oFnDolVOGFv3VwgCEniswKKxQB/n/gr8gkzaf8nit/b/bucket-euoraf4-site/o/2020-11-30-Configurando-OCI-CLI/tenancy-ocid.png)
 
+Para iniciar o processo de configuração execute o comando abaixo, aceite as configurações default ou personalize conforme a necessidade.
+
 ```javascript
 oci setup config
 ```
 ![Oci-Setup](https://objectstorage.sa-saopaulo-1.oraclecloud.com/p/Wu9yqvH68zmY2b7VbxXnbi1pwXZl54R7-YfNC8WVNpf-kz_xCczdbvMNjpwQagLy/n/gr8gkzaf8nit/b/bucket-euoraf4-site/o/2020-11-30-Configurando-OCI-CLI/oci-setup-config.png)
+
+Nesta etapa será criada uma API Keys e será utilizado a public key recém criada nesse processo.
+
+**MacOS/Linux**
+
+```javascript
+cd /home/ubuntu/.oci/
+vim oci_api_key_public.pem 
+```
+Copie o conteudo da completo da Public Key.
+
+![Public-Key](https://objectstorage.sa-saopaulo-1.oraclecloud.com/p/vOVDjB3xmwdJUYLaQRSVXluCGDaCtPUbN0gv6At8kYdtnrgLK5wJSptvLISA0nxT/n/gr8gkzaf8nit/b/bucket-euoraf4-site/o/2020-11-30-Configurando-OCI-CLI/public-key.png)
+
+**Windows**
+
+Abra a Public Key no notepad e copie todo o conteúdo.
 
 **Here is some bold text**
 
