@@ -70,8 +70,8 @@ Nesta etapa será criada uma API Keys e será utilizado a public key recém cria
 Preencha com as suas infomações (caminho/nome da public key) apontadas no momento da confinguração.
 
 ```javascript
-$cd /home/ubuntu/.oci/
-$vim oci_api_key_public.pem 
+$ cd /home/ubuntu/.oci/
+$ vim oci_api_key_public.pem 
 ```
 Copie o conteúdo completo da Public Key.
 
@@ -88,6 +88,17 @@ Acesse a console Oracle Cloud e vá atá o caminho Identity>Users>Seu User>API K
 Selecione "Paste Public Key", cole o conteúdo da Public Key e clique em Add.
 
 ![Api-Key](https://objectstorage.sa-saopaulo-1.oraclecloud.com/p/GFEO45ZEfNHoh4PEG-JULwJJ5h-sPIdLFyc8kRyIUiPalFoyrwEd4CdkCPVZhnT2/n/gr8gkzaf8nit/b/bucket-euoraf4-site/o/2020-11-30-Configurando-OCI-CLI/api-key.png)
+
+Após adicionada a API Key é gerada um Fingerprint. 
+
+![Finger-Print](https://objectstorage.sa-saopaulo-1.oraclecloud.com/p/J-fdWrzqA79ic4IYMXvSTJg0gslBP0R1KeGY4wfuY0jFus4Kx0ZTago6Uhi2QtJc/n/gr8gkzaf8nit/b/bucket-euoraf4-site/o/2020-11-30-Configurando-OCI-CLI/fingerprint.png)
+
+```javascript
+$ cd /home/ubuntu/.oci/
+$ cat config
+```
+
+![Config-Cat](https://objectstorage.sa-saopaulo-1.oraclecloud.com/p/_lwIp6-5dKk3T88FatdDxNqx1NI-tIFsVW8NJZiUhub6_osYh_HQdSMSSJOzQihy/n/gr8gkzaf8nit/b/bucket-euoraf4-site/o/2020-11-30-Configurando-OCI-CLI/config.png)
 
 **Here is some bold text**
 
