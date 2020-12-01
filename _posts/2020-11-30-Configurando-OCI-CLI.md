@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Configurando OCI-CLI e 1º deploy de Instance VM
-subtitle: Após este tutorial você será capaz de acessar o OCI-CLI localmente e criar Instances VMs na Oracle Cloud
+subtitle: |20 Minutos| Após este tutorial você será capaz de acessar o OCI-CLI localmente e criar Instances VMs na Oracle Cloud
 tags: [Cloud, Oracle, OCI, CLI, Instance, VM, Windows, Linux, MacOs]
 comments: true
 ---
@@ -108,9 +108,9 @@ $ cat config
 
 Navegue até a pasta do arquivo config e abra com notepad.
 
-![Config-Cat](https://objectstorage.sa-saopaulo-1.oraclecloud.com/p/uEdpaH0pQjgD4EQ04W7AqkVGFTqKIkaWt180qI7FpypikIpvb46_hukwPIV3qbT3/n/gr8gkzaf8nit/b/bucket-euoraf4-site/o/2020-11-30-Configurando-OCI-CLI/config-windows.png)
+![Config-Cat-Windows](https://objectstorage.sa-saopaulo-1.oraclecloud.com/p/uEdpaH0pQjgD4EQ04W7AqkVGFTqKIkaWt180qI7FpypikIpvb46_hukwPIV3qbT3/n/gr8gkzaf8nit/b/bucket-euoraf4-site/o/2020-11-30-Configurando-OCI-CLI/config-windows.png)
 
-Certifique-se que a configuracao foi bem sucedida listando os compartments do Tenancy.
+Certifique-se que a configuração foi bem sucedida listando os compartments do Tenancy.
 
 ```javascript
 $ oci iam compartment list
