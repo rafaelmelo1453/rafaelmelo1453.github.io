@@ -122,17 +122,37 @@ $ oci iam compartment list
 
 Após instalar, configurar e certificar-se que tudo funciona bem com OCI-CLI, siga os passos abaixo para criar uma Instance VM via CLI.
 
-Para essa task será necessario as seguintes informações:
+Para essa task será necessario as seguintes recursos:
 
 | Recurso | Onde Conserguir |
 | :------ |:--- |
-| Availability Domain | Console Oracle Cloud |
+| Availability Domain | CLI-OCI |
 | Compartment OCID | Console Oracle Cloud |
 | Subnet OCID | Console Oracle Cloud |
 | Shape OCID | Console Oracle Cloud |
-| Image OCID | Site Oracle |
+| Image OCID | Site Oracle Cloud |
 | Display Name | Defina um Nome | 
 | SSH Key | Gerar no Deploy |
+
+Availability Domain: Salve o OCID do availability domain.
+
+```javascript
+$ oci iam availability-domain list --query "data [*].{\"Name\":\"name\"}" --output table
+```
+
+Compartimet: Salve o OCID do compartment que deseja criar a Instance VM.
+
+```javascript
+$ oci iam compartment list --lifecycle-state active --query "data [*].{\"Name\":\"name\",\"id\":\"id\"}" --output table
+```
+
+Subnet: Substitua o valor do --compartment-id pela OCID do compartiment listado acima onde sua subnet está alocada.
+
+```javascript
+$ oci network subnet list --compartment-id ocid1.compartment.oc1..aaaaaaaa2tjqxvk2oxw45php23trjixcrzwb3bhzhcw4qqjpjcpvozny6mza --query "data [*].{\"Name\":\"display-name\",\"id\":\"id\"}" --output table
+```
+
+Shape: Escolha o shape da Instance VM, você pode consultar todos os shapes disponíveis no site oficial [Oracle Cloud Infrastructure](https://docs.cloud.oracle.com/en-us/iaas/Content/Compute/References/computeshapes.htm)
 
 Inicie criando um diretorio para armazenar a SSH Key.
 
