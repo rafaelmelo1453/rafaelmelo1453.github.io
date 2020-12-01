@@ -67,9 +67,11 @@ Nesta etapa será criada uma API Keys e será utilizado a public key recém cria
 
 **MacOS/Linux**
 
+Preecha com as suas infomações (caminho/nome da public key) apontadas no momento da confinguração.
+
 ```javascript
-cd /home/ubuntu/.oci/
-vim oci_api_key_public.pem 
+$cd /home/ubuntu/.oci/
+$vim oci_api_key_public.pem 
 ```
 Copie o conteudo da completo da Public Key.
 
@@ -78,6 +80,10 @@ Copie o conteudo da completo da Public Key.
 **Windows**
 
 Abra a Public Key no notepad e copie todo o conteúdo.
+
+![Public-Key-Windows](https://objectstorage.sa-saopaulo-1.oraclecloud.com/p/vOVDjB3xmwdJUYLaQRSVXluCGDaCtPUbN0gv6At8kYdtnrgLK5wJSptvLISA0nxT/n/gr8gkzaf8nit/b/bucket-euoraf4-site/o/2020-11-30-Configurando-OCI-CLI/public-key.png)
+
+
 
 **Here is some bold text**
 
