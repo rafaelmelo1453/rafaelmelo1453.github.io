@@ -59,21 +59,7 @@ Tenancy OCID: Navegue até Administration>Compartment>Tenancy Details
 ```javascript
 oci setup config
 ```
-
-```javascript
-Enter a location for your config [/home/ubuntu/.oci/config]: 
-Enter a user OCID: ocid1.user.oc1..
-Enter a tenancy OCID: ocid1.tenancy.oc1..
-Enter a region (e.g. ap-chiyoda-1, ap-chuncheon-1, ap-hyderabad-1, ap-melbourne-1, ap-mumbai-1, ap-osaka-1, ap-seoul-1, ap-sydney-1, ap-tokyo-1, ca-montreal-1, ca-toronto-1, eu-amsterdam-1, eu-frankfurt-1, eu-zurich-1, me-dubai-1, me-jeddah-1, sa-saopaulo-1, uk-cardiff-1, uk-gov-cardiff-1, uk-gov-london-1, uk-london-1, us-ashburn-1, us-gov-ashburn-1, us-gov-chicago-1, us-gov-phoenix-1, us-langley-1, us-luke-1, us-phoenix-1, us-sanjose-1): sa-saopaulo-1
-Do you want to generate a new API Signing RSA key pair? (If you decline you will be asked to supply the path to an existing key.) [Y/n]: yes
-Enter a directory for your keys to be created [/home/ubuntu/.oci]: 
-Enter a name for your key [oci_api_key]:        
-Public key written to: /home/ubuntu/.oci/oci_api_key_public.pem
-Enter a passphrase for your private key (empty for no passphrase): 
-Private key written to: /home/ubuntu/.oci/oci_api_key.pem
-Fingerprint: 5e:b0:68:f5:d9...
-Config written to /home/ubuntu/.oci/config
-```
+![Oci-Setup](https://objectstorage.sa-saopaulo-1.oraclecloud.com/p/Wu9yqvH68zmY2b7VbxXnbi1pwXZl54R7-YfNC8WVNpf-kz_xCczdbvMNjpwQagLy/n/gr8gkzaf8nit/b/bucket-euoraf4-site/o/2020-11-30-Configurando-OCI-CLI/oci-setup-config.png)
 
 **Here is some bold text**
 
