@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Como configurar OCI-CLI e 1º deploy de Instance VM
-subtitle: 25 minutos | Aprenda como instalar OCI-CLI e criar recursos via command line
+title: Como configurar OCI-CLI e fazer 1º deploy de Instance VM
+subtitle: Em 25 minutos instale o OCI-CLI e crie uma Instance VM via Command Line
 tags: [Cloud, Oracle, OCI, CLI, Instance, VM, Windows, Linux, MacOs]
 comments: true
 ---
@@ -193,7 +193,7 @@ $ ssh -i /home/ubuntu/keys/key-test opc@168.138.148.108
 
 ![Acess-Instance](https://objectstorage.sa-saopaulo-1.oraclecloud.com/p/jGJfteIvKOMXX44FT5MMdH3153D-wraoucBfX-NzFqMEZltNGmjUdhqBjo5wID12/n/gr8gkzaf8nit/b/bucket-euoraf4-site/o/2020-11-30-Configurando-OCI-CLI/acess-instance.png)
 
-Agora você será capaz de acessar o OCI-CLI localmente e criar Instances VMs na Oracle Cloud.
+Agora você é capaz de acessar o OCI-CLI e criar Instances VMs na Oracle Cloud Infrastructure.
 
 
 
