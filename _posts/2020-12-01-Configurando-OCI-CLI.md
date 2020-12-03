@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Como configurar OCI-CLI e criar uma Instance VM na OCI
+title: Como configurar OCI-CLI e criar Instances VM na OCI
 subtitle: Instale o OCI-CLI para macOS, Linux ou Windows e crie uma Instance VM via CLI na Oracle Cloud Infrastructure
 tags: [Cloud, Oracle, OCI, CLI, Instance, VM, Windows, Linux, MacOs]
 comments: true
