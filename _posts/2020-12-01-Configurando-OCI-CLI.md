@@ -151,7 +151,7 @@ $ oci network subnet list --compartment-id ocid1.compartment.oc1..aaaaaaaa2tjqxv
 **Imagem OCID:** Substitua o valor do --compartment-id pela OCID do compartiment listado acima onde será realizado o deploy da Instance VM. Salve o OCID da imagem desejada, nesta task será utilizada a Oracle-Linux-7.9-2020.11.10-1, mas é possível escolher qualquer [imagem disponível na Oracle Cloud Infrastructure](https://docs.cloud.oracle.com/en-us/iaas/images/).
 
 ```javascript
-$ oci compute image list --compartment-id ocid1.compartment.oc1..aaaaaaaayu2eqzztrf7nrvi2dc5h2vl2rw2xoqphiucblfg7ossq7rzc5wsq --query "data [?contains(\"display-name\",'Oracle-Linux')] | [?contains(\"display-name\",'GPU') == \`false\`].{\"IMAGE\":\"display-name\",\"ID\":\"id\"}" --output table
+$ oci compute image list --compartment-id ocid1.compartment.oc1..aaaaaaaayu2eqzztrf7nrvi2dc5h2vl2rw2xoqphiucblfg7ossq7rzc5wsq --query "data [?contains(\"display-name\",'Oracle-Linux-7.9')].{\"IMAGE\":\"display-name\",\"ID\":\"id\"}" --output table
 ```
 
 **Shape:** Utilize o shape **Always Free** para testes, consulte todos os shapes disponíveis no site oficial [Oracle Cloud Infrastructure.](https://docs.cloud.oracle.com/en-us/iaas/Content/Compute/References/computeshapes.htm)
@@ -166,7 +166,7 @@ Inicie criando um diretório para armazenar a SSH Key.
 $ mkdir keys
 ```
 
-Gerando uma nova SSH Key. Substitua pelo caminho que deseja salvar a SSH Key, exemplo C:\Users... 
+Gerando uma nova SSH Key. Substitua pelo caminho que deseja salvar a SSH Key, por exemplo no Windows C:\Keys. 
 
 ```javascript
 $ ssh-keygen -t rsa -N "" -b 2048 -C "CiCd-Compute-Instance" -f /home/ubuntu/keys/key-test
@@ -180,18 +180,29 @@ $ oci compute instance launch --availability-domain syxp:SA-SAOPAULO-1-AD-1 --co
 
 Aguarde até que o estado da Intance VM seja Running.
 
-![VM-Provi](https://objectstorage.sa-saopaulo-1.oraclecloud.com/p/uFBtSSpKLs3ENerlca0jXrbENvMSLpLtW1BO4P8xH2K7-vTNg96n4E75He7du8Rn/n/gr8gkzaf8nit/b/bucket-euoraf4-site/o/2020-11-30-Configurando-OCI-CLI/vm-provi.png)
-
-![VM-Run](https://objectstorage.sa-saopaulo-1.oraclecloud.com/p/OjOqNQ0NTBbAZyzEqp_LkbzdUI5YGrBrJFFZuzM7bIGfr-Q3HIh1sMS_v6vPytfB/n/gr8gkzaf8nit/b/bucket-euoraf4-site/o/2020-11-30-Configurando-OCI-CLI/vm-run.png)
+![VM-Run](https://objectstorage.sa-saopaulo-1.oraclecloud.com/p/frjmu6F0Z5y29QjmRqTmV8xDhwrUcLPBHN6E0NsT6p3loROKM2m6-BPcNFlAXsqL/n/gr8gkzaf8nit/b/bucket-euoraf4-site/o/2020-11-30-Configurando-OCI-CLI/running-instance.png)
 
 Acesse a Instance VM recém criada.
+
+**MacOS/Linux**
 
 ```javascript
 $ chmod 400 /home/ubuntu/keys/key-test
 $ ssh -i /home/ubuntu/keys/key-test opc@168.138.148.108
 ```
 
-![Acess-Instance](https://objectstorage.sa-saopaulo-1.oraclecloud.com/p/jGJfteIvKOMXX44FT5MMdH3153D-wraoucBfX-NzFqMEZltNGmjUdhqBjo5wID12/n/gr8gkzaf8nit/b/bucket-euoraf4-site/o/2020-11-30-Configurando-OCI-CLI/acess-instance.png)
+![Access-macos](https://objectstorage.sa-saopaulo-1.oraclecloud.com/p/MiuLVTjjSNXUtaqxJCT_CAI0z4Ia9B7OUbOE87GjmXgOorvN5fL3b-kICe9tbZhT/n/gr8gkzaf8nit/b/bucket-euoraf4-site/o/2020-11-30-Configurando-OCI-CLI/access-macos.png)
+
+**Windows**
+
+Instale o [MobaXterm](https://mobaxterm.mobatek.net/), abra uma nova sessão e execute os comando abaixo:
+
+```javascript
+$ chmod 400 'C:\keys\key-test'
+$ ssh -i 'C:\keys\key-test' opc@152.67.40.241
+```
+
+![Acess-Windows](https://objectstorage.sa-saopaulo-1.oraclecloud.com/p/MKR3wsGjo5S0o1C-i19XtWHpINaXKoPA0qFYYNqCus9fUhkXl4I7jW-sue1tZbU6/n/gr8gkzaf8nit/b/bucket-euoraf4-site/o/2020-11-30-Configurando-OCI-CLI/access-windows.png)
 
 Agora você é capaz de acessar o OCI-CLI e criar Instances VMs na Oracle Cloud Infrastructure.
 
