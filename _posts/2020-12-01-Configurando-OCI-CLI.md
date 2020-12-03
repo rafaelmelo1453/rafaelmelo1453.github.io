@@ -195,7 +195,7 @@ $ ssh -i /home/ubuntu/keys/key-test opc@152.67.40.241
 
 **Windows**
 
-Instale o [MobaXterm](https://mobaxterm.mobatek.net/), abra uma nova sessão e execute os comando abaixo:
+Instale o [MobaXterm](https://mobaxterm.mobatek.net/), abra uma nova sessão e acesse a Instance VM.
 
 ```javascript
 $ chmod 400 'C:\keys\key-test'
