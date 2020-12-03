@@ -23,7 +23,7 @@ Aceite as configurações default ou personalize conforme a necessidade.
 bash -c "$(curl -L https://raw.githubusercontent.com/oracle/oci-cli/master/scripts/install/install.sh)"
 ```
 
-**Windows**  
+**Windows:** Execute o comando abaixo com permissão de administrador. Aceite a instalação do PythonCore caso seja solicitado, reabra o CMD após a instalação.
 ```javascript
 powershell -NoProfile -ExecutionPolicy Bypass -Command "iex ((New-Object System.Net.WebClient).DownloadString('https://raw.githubusercontent.com/oracle/oci-cli/master/scripts/install/install.ps1'))"
 ```
@@ -52,7 +52,7 @@ Tenancy OCID: Navegue até Administration>Compartment>Tenancy Details
 
 ![Tenancy-Ocid](https://objectstorage.sa-saopaulo-1.oraclecloud.com/p/AgiXs372OaF4Jl9P2gdjVXpgceo-c_u7So_hh2oFnDolVOGFv3VwgCEniswKKxQB/n/gr8gkzaf8nit/b/bucket-euoraf4-site/o/2020-11-30-Configurando-OCI-CLI/tenancy-ocid.png)
 
-Para iniciar o processo de configuração execute o comando abaixo, aceite as configurações default ou personalize conforme a necessidade.
+Para iniciar o processo de configuração execute o comando abaixo, aceite as configurações default ou personalize conforme a necessidade. Salve o diretório de armazenamento do arquivo config e SSH Key.
 
 ```javascript
 oci setup config
@@ -75,7 +75,7 @@ Copie o conteúdo completo da Public Key.
 
 **Windows**
 
-Abra a Public Key no notepad e copie todo o conteúdo.
+Abra a Public Key com notepad e copie todo o conteúdo.
 
 ![Public-Key-Windows](https://objectstorage.sa-saopaulo-1.oraclecloud.com/p/vOVDjB3xmwdJUYLaQRSVXluCGDaCtPUbN0gv6At8kYdtnrgLK5wJSptvLISA0nxT/n/gr8gkzaf8nit/b/bucket-euoraf4-site/o/2020-11-30-Configurando-OCI-CLI/public-key.png)
 
@@ -102,7 +102,7 @@ $ cat config
 
 **Windows**
 
-Navegue até a pasta do arquivo config e abra com notepad.
+Navegue até o diretório do arquivo config e abra com notepad.
 
 ![Config-Cat-Windows](https://objectstorage.sa-saopaulo-1.oraclecloud.com/p/uEdpaH0pQjgD4EQ04W7AqkVGFTqKIkaWt180qI7FpypikIpvb46_hukwPIV3qbT3/n/gr8gkzaf8nit/b/bucket-euoraf4-site/o/2020-11-30-Configurando-OCI-CLI/config-windows.png)
 
