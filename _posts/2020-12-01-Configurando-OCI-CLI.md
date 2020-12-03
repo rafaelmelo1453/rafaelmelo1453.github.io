@@ -188,7 +188,7 @@ Acesse a Instance VM recém criada.
 
 ```javascript
 $ chmod 400 /home/ubuntu/keys/key-test
-$ ssh -i /home/ubuntu/keys/key-test opc@168.138.148.108
+$ ssh -i /home/ubuntu/keys/key-test opc@152.67.40.241
 ```
 
 ![Access-macos](https://objectstorage.sa-saopaulo-1.oraclecloud.com/p/MiuLVTjjSNXUtaqxJCT_CAI0z4Ia9B7OUbOE87GjmXgOorvN5fL3b-kICe9tbZhT/n/gr8gkzaf8nit/b/bucket-euoraf4-site/o/2020-11-30-Configurando-OCI-CLI/access-macos.png)
@@ -205,6 +205,8 @@ $ ssh -i 'C:\keys\key-test' opc@152.67.40.241
 ![Acess-Windows](https://objectstorage.sa-saopaulo-1.oraclecloud.com/p/MKR3wsGjo5S0o1C-i19XtWHpINaXKoPA0qFYYNqCus9fUhkXl4I7jW-sue1tZbU6/n/gr8gkzaf8nit/b/bucket-euoraf4-site/o/2020-11-30-Configurando-OCI-CLI/access-windows.png)
 
 Agora você é capaz de acessar o OCI-CLI e criar Instances VMs na Oracle Cloud Infrastructure.
+
+
 
 
 
