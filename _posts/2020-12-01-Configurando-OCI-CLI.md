@@ -166,7 +166,7 @@ Inicie criando um diretório para armazenar a SSH Key.
 $ mkdir keys
 ```
 
-Gerando uma nova SSH Key. Substitua pelo caminho que deseja salvar a SSH Key, por exemplo no Windows C:\Keys. 
+Gerando uma nova SSH Key. Substitua pelo caminho que deseja salvar a SSH Key, por exemplo C:\Keys no Windows. 
 
 ```javascript
 $ ssh-keygen -t rsa -N "" -b 2048 -C "CiCd-Compute-Instance" -f /home/ubuntu/keys/key-test
