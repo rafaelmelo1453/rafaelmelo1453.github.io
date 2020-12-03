@@ -172,7 +172,7 @@ Gerando uma nova SSH Key. Substitua pelo caminho que deseja salvar a SSH Key, po
 $ ssh-keygen -t rsa -N "" -b 2048 -C "CiCd-Compute-Instance" -f /home/ubuntu/keys/key-test
 ```
 
-Faça o deploy da Instance VM utilizando as informações salvas anteriomente availability-domain, compartment-id, shape, subnet-id, image-id, display-name, ssh-authorized-keys-file e adicione o parâmetro assign-public-ip como true para que seja atribuído um IP publico na Instance VM.
+Faça o deploy da Instance VM utilizando as informações salvas anteriomente availability-domain, compartment-id, shape, subnet-id, image-id, display-name, ssh-authorized-keys-file e adicione o parâmetro assign-public-ip como true para que seja atribuído um IP público na Instance VM.
 
 ```javascript
 $ oci compute instance launch --availability-domain syxp:SA-SAOPAULO-1-AD-1 --compartment-id ocid1.compartment.oc1..aaaaaaaa2tjqxvk2oxw45php23trjixcrzwb3bhzhcw4qqjpjcpvozny6mza --shape VM.Standard.E2.1.Micro --subnet-id ocid1.subnet.oc1.sa-saopaulo-1.aaaaaaaa2j4d7too2lkyjtlzujdegwl3m37tpoqxilnsyunykc2nh3fy65kq --image-id ocid1.image.oc1.sa-saopaulo-1.aaaaaaaa7inha53kcyutiqdbz3w4gvms2ab5z3bc624loheugh7fbvg4wada --assign-public-ip true --display-name instance-vm-teste --ssh-authorized-keys-file /home/ubuntu/keys/key-test.pub
