@@ -124,7 +124,7 @@ Certifique-se que todos os recursos foram criados corretamente em **Networking >
 
 ## 3. Usando OCI-CLI
 
-Caso você não tenha OCI-CLI instalado clique [aqui](https://smallskills.github.io/2020-12-03-Configurando-OCI-CLI/) para configura-lo ou continue usando o **Oracle Cloud Shell** a partir da console administrativa da Oracle Cloud Infrastructure.
+Caso você não tenha OCI-CLI instalado clique [aqui](https://smallskills.github.io/2020-12-04-Configurando-OCI-CLI/) para configura-lo ou continue usando o **Oracle Cloud Shell** a partir da console administrativa da Oracle Cloud Infrastructure.
 
 ![cloud-shell](https://objectstorage.sa-saopaulo-1.oraclecloud.com/p/mD3PmxYZP3IKYEsOnT4pAEkJOnHxNkPa-F-4DwaY6aFglc0oY37f44ZTuyW_IN3q/n/gr8gkzaf8nit/b/bucket-euoraf4-site/o/POST-VCN/cloud-shell.png)
 
