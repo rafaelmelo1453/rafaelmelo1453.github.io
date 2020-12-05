@@ -63,7 +63,7 @@ Nesta etapa será criada uma API Keys e será utilizado a public key recém cria
 
 **MacOS/Linux**
 
-Preencha com as suas infomações (caminho/nome da public key) apontadas no momento da confinguração.
+Preencha com as suas informações (caminho/nome da public key) apontadas no momento da configuração.
 
 ```javascript
 $ cd /home/ubuntu/.oci/
@@ -79,7 +79,7 @@ Abra a Public Key com notepad e copie todo o conteúdo.
 
 ![Public-Key-Windows](https://objectstorage.sa-saopaulo-1.oraclecloud.com/p/vOVDjB3xmwdJUYLaQRSVXluCGDaCtPUbN0gv6At8kYdtnrgLK5wJSptvLISA0nxT/n/gr8gkzaf8nit/b/bucket-euoraf4-site/o/2020-11-30-Configurando-OCI-CLI/public-key.png)
 
-Acesse a console Oracle Cloud e vá atá o caminho Identity>Users>Seu User>API Keys>Add API Key.
+Acesse a console Oracle Cloud e vá até o caminho Identity>Users>Seu User>API Keys>Add API Key.
 
 Selecione "Paste Public Key", cole o conteúdo da Public Key e clique em Add.
 
@@ -118,7 +118,7 @@ $ oci iam compartment list
 
 Após instalar, configurar e certificar-se que tudo funciona bem com OCI-CLI, siga os passos abaixo para criar uma Instance VM via CLI.
 
-Para essa task será necessario as seguintes recursos:
+Para essa task será necessario os seguintes recursos:
 
 | Recurso | Onde Conserguir |
 | :------ |:--- |
@@ -154,7 +154,7 @@ $ oci network subnet list --compartment-id ocid1.compartment.oc1..aaaaaaaa2tjqxv
 $ oci compute image list --compartment-id ocid1.compartment.oc1..aaaaaaaayu2eqzztrf7nrvi2dc5h2vl2rw2xoqphiucblfg7ossq7rzc5wsq --query "data [?contains(\"display-name\",'Oracle-Linux-7.9')].{\"IMAGE\":\"display-name\",\"ID\":\"id\"}" --output table
 ```
 
-**Shape:** Utilize o shape **Always Free** para testes, consulte todos os shapes disponíveis no site oficial [Oracle Cloud Infrastructure.](https://docs.cloud.oracle.com/en-us/iaas/Content/Compute/References/computeshapes.htm)
+**Shape:** Utilize o shape **VM.Standard.E2.1.Micro** que faz parte dos recursos **Always Free** , consulte todos os shapes disponíveis no site oficial [Oracle Cloud Infrastructure.](https://docs.cloud.oracle.com/en-us/iaas/Content/Compute/References/computeshapes.htm)
 
 ![Resources-Get](https://objectstorage.sa-saopaulo-1.oraclecloud.com/p/pACSZBitORcnthvHOrTAg4R5nFyflz6fP3Es08mvZ4kxE8nwsYt10ZzAcwRwpHDY/n/gr8gkzaf8nit/b/bucket-euoraf4-site/o/2020-11-30-Configurando-OCI-CLI/resource-get.png)
 
@@ -166,13 +166,13 @@ Inicie criando um diretório para armazenar a SSH Key.
 $ mkdir keys
 ```
 
-Gerando uma nova SSH Key. Substitua pelo caminho que deseja salvar a SSH Key, por exemplo C:\Keys no Windows. 
+Gerando uma nova SSH Key. Substitua pelo caminho que deseja salvar a SSH Key, exemplo C:\Keys no Windows. 
 
 ```javascript
 $ ssh-keygen -t rsa -N "" -b 2048 -C "CiCd-Compute-Instance" -f /home/ubuntu/keys/key-test
 ```
 
-Faça o deploy da Instance VM utilizando as informações salvas anteriomente availability-domain, compartment-id, shape, subnet-id, image-id, display-name, ssh-authorized-keys-file e adicione o parâmetro assign-public-ip como true para que seja atribuído um IP público na Instance VM.
+Faça o deploy da Instance VM utilizando as informações salvas anteriormente availability-domain, compartment-id, shape, subnet-id, image-id, display-name, ssh-authorized-keys-file e adicione o parâmetro assign-public-ip como true para que seja atribuído um IP público na Instance VM.
 
 ```javascript
 $ oci compute instance launch --availability-domain syxp:SA-SAOPAULO-1-AD-1 --compartment-id ocid1.compartment.oc1..aaaaaaaa2tjqxvk2oxw45php23trjixcrzwb3bhzhcw4qqjpjcpvozny6mza --shape VM.Standard.E2.1.Micro --subnet-id ocid1.subnet.oc1.sa-saopaulo-1.aaaaaaaa2j4d7too2lkyjtlzujdegwl3m37tpoqxilnsyunykc2nh3fy65kq --image-id ocid1.image.oc1.sa-saopaulo-1.aaaaaaaa7inha53kcyutiqdbz3w4gvms2ab5z3bc624loheugh7fbvg4wada --assign-public-ip true --display-name instance-vm-teste --ssh-authorized-keys-file /home/ubuntu/keys/key-test.pub
