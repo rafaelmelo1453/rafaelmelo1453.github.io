@@ -9,6 +9,7 @@ comments: true
 ## Requisitos
 
 | E-mail | Obrigatório |
+| Celular | Obrigatório |
 | Cartão de crédito internacional | Obrigatório |
 
 ## Avaliação gratuita de 30 dias
