@@ -59,7 +59,7 @@ Certifique-se que todos os recursos foram criados corretamente em **Networking >
 
 ![Wizard-07](https://objectstorage.sa-saopaulo-1.oraclecloud.com/p/ENEs-ejd6RoNUvU6-KLqmMZjW6GuftqiYh41TbRhsYmp05skG4vWeS9mqtBNqIqE/n/gr8gkzaf8nit/b/bucket-euoraf4-site/o/POST-VCN/wizard-07.png)
 
-**Aproveite a VCN recém criada e provisione uma Instance VM seguindo [estas instruções](https://smallskills.github.io/2020-12-03-Configurando-OCI-CLI/).**
+**Aproveite a VCN recém criada e provisione uma Instance VM seguindo [estas instruções](https://smallskills.github.io/2020-12-04-Configurando-OCI-CLI/).**
 
 ## 2. Criando recursos da VCN individualmente
 
@@ -120,7 +120,7 @@ Certifique-se que todos os recursos foram criados corretamente em **Networking >
 
 ![VCN-07](https://objectstorage.sa-saopaulo-1.oraclecloud.com/p/8zAyR16Qv-DKWT7c-givfYWoRYEt5_DebHebHfRKha4UNYXkxGxCfAm7A9WD9xaL/n/gr8gkzaf8nit/b/bucket-euoraf4-site/o/POST-VCN/VCN-07.png)
 
-**Aproveite a VCN recém criada e provisione uma Instance VM seguindo [estas instruções](https://smallskills.github.io/2020-12-03-Configurando-OCI-CLI/).**
+**Aproveite a VCN recém criada e provisione uma Instance VM seguindo [estas instruções](https://smallskills.github.io/2020-12-04-Configurando-OCI-CLI/).**
 
 ## 3. Usando OCI-CLI
 
@@ -212,4 +212,4 @@ Associe a route table a public subnet.
 $ oci network subnet update --subnet-id $public_subnet_id --route-table-id $rt_id
 ```
 
-**Aproveite a VCN recém criada e provisione uma Instance VM seguindo [estas instruções](https://smallskills.github.io/2020-12-03-Configurando-OCI-CLI/).**
+**Aproveite a VCN recém criada e provisione uma Instance VM seguindo [estas instruções](https://smallskills.github.io/2020-12-04-Configurando-OCI-CLI/).**
