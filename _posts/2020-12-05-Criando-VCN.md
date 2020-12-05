@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Como criar VCN, Subnet, Internet Gateway e Route Table na Oracle Cloud
+title: Provisionando VCN, Subnet, Internet Gateway e Route Table na Oracle Cloud
 subtitle: Três formas de criar uma Virtual Cloud Network, Subnet, Internet Gateway e Route Table na Oracle Cloud Infrastructure
 tags: [Cloud, Oracle, OCI, CLI, VCN, Subnet, Internet Gateway, Route Table]
 comments: true
