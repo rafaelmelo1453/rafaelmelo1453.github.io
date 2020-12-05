@@ -21,7 +21,7 @@ comments: true
 
 ![Wizard-01](https://objectstorage.sa-saopaulo-1.oraclecloud.com/p/elm_Z_qoSXZhZzQFIe9F8qfSgRVY4bWRIZ7bTfFIzbgJL7x-gij3be0vB2CVqMx7/n/gr8gkzaf8nit/b/bucket-euoraf4-site/o/POST-VCN/wizard-01.png)
 
-Escolha a opção **VCN with Internet Connectivity** para criar uma VCN com conexão com a internet, ou seja todos os recursos necessários para conectividade externa será criada.
+Escolha a opção **VCN with Internet Connectivity** para criar uma VCN com conexão com a internet, assim todos os recursos necessários para conectividade externa será criada.
 
 ![Wizard-02](https://objectstorage.sa-saopaulo-1.oraclecloud.com/p/Gqq3Wwt2GxPnZZLt9AqBb2fomv24IQ9Mx4Pp_Ha67X5ON_m3Ohqzz2qtWyqmiDA1/n/gr8gkzaf8nit/b/bucket-euoraf4-site/o/POST-VCN/wizard-02.png)
 
@@ -81,7 +81,7 @@ Certifique-se que todos os recursos foram criados corretamente em **Networking >
 
 ![VCN-02](https://objectstorage.sa-saopaulo-1.oraclecloud.com/p/KR8sBCs6F_AsXkj5FFdyP9GlrTxIeANwe6wAN2w5psW1OnIBBUjHyLTW98seSmUu/n/gr8gkzaf8nit/b/bucket-euoraf4-site/o/POST-VCN/VCN-02.png)
 
-**Route Table:** Crie uma Route Table que será usada para permitir acesso a internet a partir da VCN em **Networking > Virtual Cloud Networks > VCN > Route Tables**.
+**Route Table:** Crie uma Route Table que será usada para permitir acesso à internet a partir da VCN em **Networking > Virtual Cloud Networks > VCN > Route Tables**.
 - Name: route-table
 - Target Type: Internet Gateway
 - Destination CIDR BLOCK: 0.0.0.0/0
@@ -124,11 +124,11 @@ Certifique-se que todos os recursos foram criados corretamente em **Networking >
 
 ## 3. Usando OCI-CLI
 
-Caso você não tenha OCI-CLI instalado clique [aqui](https://smallskills.github.io/2020-12-04-Configurando-OCI-CLI/) para configura-lo ou continue usando o **Oracle Cloud Shell** a partir da console administrativa da Oracle Cloud Infrastructure.
+Caso você não tenha OCI-CLI instalado clique [aqui](https://smallskills.github.io/2020-12-04-Configurando-OCI-CLI/) para configurar ou use o **Oracle Cloud Shell** a partir da console administrativa da Oracle Cloud Infrastructure.
 
 ![cloud-shell](https://objectstorage.sa-saopaulo-1.oraclecloud.com/p/mD3PmxYZP3IKYEsOnT4pAEkJOnHxNkPa-F-4DwaY6aFglc0oY37f44ZTuyW_IN3q/n/gr8gkzaf8nit/b/bucket-euoraf4-site/o/POST-VCN/cloud-shell.png)
 
-Para provisionar a VCN via CLI é necessário obter o OCID de alguns recursos. É possível consultar na console administrativa, mas neste caso será usada **query** no CLI para retornar o OCID e variavéis de ambiente para automatizar o processo, observe o **comando export** no início de alguns scripts.
+Para provisionar a VCN via CLI é necessário obter o OCID de alguns recursos. É possível consultar na console administrativa, mas neste caso será usada **query** no CLI para retornar o OCID e variáveis de ambiente para automatizar o processo, observe o **comando export** no início de alguns scripts.
 
 **Tenancy:** Obtenha o OCID do seu Tenancy.
 
