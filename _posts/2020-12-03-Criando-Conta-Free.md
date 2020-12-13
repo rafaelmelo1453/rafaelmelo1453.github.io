@@ -60,11 +60,11 @@ Preencha os dados solicitados.
 - Sobrenome
 - E-mail
 
-![site-02](https://objectstorage.sa-saopaulo-1.oraclecloud.com/p/bAKMIKeaxeTGRZgdr1rqvHhRekI2RLB-qrkzcH9kNHVddXLtZDkKt-DsoNhuiIZX/n/gr8gkzaf8nit/b/bucket-euoraf4-site/o/FREE-TIER/site02.png)
+![site-02](https://objectstorage.sa-saopaulo-1.oraclecloud.com/p/CFLFYjTkjkZEoc86_jEeOAiS_5t0z1qbQcUP_RGhvNR3vQpO0c2FeEtWUEw1JbeC/n/gr8gkzaf8nit/b/bucket-euoraf4-site/o/FREE-TIER/site02.png)
 
 Abra o link que foi enviado para o e-mail anteriomente cadastrado.
 
-![site-03](https://objectstorage.sa-saopaulo-1.oraclecloud.com/p/JgcQqMt3LcfmEIEWeXjzM-56xkXI5PFYCQFu7Xi5x4E3_OuM9iXRlTBMscE_z7Iw/n/gr8gkzaf8nit/b/bucket-euoraf4-site/o/FREE-TIER/site03.png)
+![site-03](https://objectstorage.sa-saopaulo-1.oraclecloud.com/p/o1gKjcvH5WS5d6eZZATLkEPT0bP7uYtUNfIb4yZpzwd4jVuUzmvtyUi40m4IgLBb/n/gr8gkzaf8nit/b/bucket-euoraf4-site/o/FREE-TIER/site03.png)
 
 
 Preencha os demais dados solicitados.
@@ -73,7 +73,7 @@ Preencha os demais dados solicitados.
 - Nome da conta
 - Região da Conta
 
-![site-04](https://objectstorage.sa-saopaulo-1.oraclecloud.com/p/qLBAT3y4xhRUdQ26fisi7q844K5CVec3OFeofVzVPAL2MY5xwyxw0rFP1jTi0yiM/n/gr8gkzaf8nit/b/bucket-euoraf4-site/o/FREE-TIER/site04.png)
+![site-04](https://objectstorage.sa-saopaulo-1.oraclecloud.com/p/PylOU9yGzpMB697zlOGUCNGpnD2MD9WxbQllgelzxFETZQxUAGY0oXGD7ujps_KF/n/gr8gkzaf8nit/b/bucket-euoraf4-site/o/FREE-TIER/site04.png)
 
 Insira seus dados reais, será usado para validar seu cartão de crédito.
 
@@ -83,11 +83,11 @@ Insira seus dados reais, será usado para validar seu cartão de crédito.
 - CEP
 - CPF
 
-![site-05](https://objectstorage.sa-saopaulo-1.oraclecloud.com/p/hxHNleAqAWEf5tlI4ry_Pft-j_VDz9kO2GzXFblvuyhig9yiKrLeaCRmHU2oFul0/n/gr8gkzaf8nit/b/bucket-euoraf4-site/o/FREE-TIER/site05.png)
+![site-05](https://objectstorage.sa-saopaulo-1.oraclecloud.com/p/0hCxE9PQNaXRNvR-SetLCbE-L60nbmNLYsD7N7DewDtCrd84D3DEatSM5cGL8eAY/n/gr8gkzaf8nit/b/bucket-euoraf4-site/o/FREE-TIER/site05.png)
 
 Insira seu número de celular para validação via mensagem de texto.
 
-![site-06](https://objectstorage.sa-saopaulo-1.oraclecloud.com/p/bOFLVpgMyFcqC1FgYDGThcOfsp6ZxLEipxqHF2O5zAZXBNXfC5_DMWhKHt5p_rjh/n/gr8gkzaf8nit/b/bucket-euoraf4-site/o/FREE-TIER/site06.png)
+![site-06](https://objectstorage.sa-saopaulo-1.oraclecloud.com/p/Ngf9ioxnb1ougohX8lE2e8KX25uIBTY_I2ecabS_LFtEGWtWKjHSdIimAfqsWzn8/n/gr8gkzaf8nit/b/bucket-euoraf4-site/o/FREE-TIER/site06.png)
 
 Clique em **Adicionar um método de pagamento**.
 
