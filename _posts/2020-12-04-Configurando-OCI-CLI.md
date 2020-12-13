@@ -120,7 +120,7 @@ Após instalar, configurar e certificar-se que tudo funciona bem com OCI-CLI, si
 
 Para essa task será necessario os seguintes recursos:
 
-| Recurso | Onde Conserguir |
+| Recurso | Onde Conseguir |
 | :------ |:--- |
 | Availability Domain | CLI-OCI |
 | Compartment OCID | CLI-OCI |
