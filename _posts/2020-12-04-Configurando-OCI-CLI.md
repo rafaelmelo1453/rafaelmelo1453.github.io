@@ -36,7 +36,7 @@ oci --help
 
 Caso a instalação tenha sido bem sucedida receberá um output como esse.
 
-![Oci-Help](https://objectstorage.sa-saopaulo-1.oraclecloud.com/p/E4YcwQoBdQsKXZm8fVrLci4xiInG0FiRaGWSQfNEXxVXJAmfiSXS-3-PPKoWV2Vr/n/gr8gkzaf8nit/b/bucket-euoraf4-site/o/2020-11-30-Configurando-OCI-CLI/oci-help.png)
+![cli-01](https://objectstorage.sa-saopaulo-1.oraclecloud.com/p/R5Q-v1grMpuKQTAdLMApTfSCh8OK5j4W3ZtOiJ_hhrnvlhOKNPmlgujioqxhpvnF/n/gr8gkzaf8nit/b/bucket-euoraf4-site/o/2020-11-30-Configurando-OCI-CLI/cli-01.png)
 
 ## Configurando Oracle Cloud Infrastructure CLI
 
@@ -46,11 +46,11 @@ Com o CLI instalado, agora é preciso configura-lo. Nesta etapa será necessári
 
 User OCID: Navegue até Identity>Users>Seu User
 
-![User-Ocid](https://objectstorage.sa-saopaulo-1.oraclecloud.com/p/np_zGbe9Zaz9UINKmPcGJhRIxsGrUHuVEEcDhLG6RQow1d6SMvspygRAq_UCpzff/n/gr8gkzaf8nit/b/bucket-euoraf4-site/o/2020-11-30-Configurando-OCI-CLI/user-ocid.png)
+![cli-02](https://objectstorage.sa-saopaulo-1.oraclecloud.com/p/jTQcwLHf8e2tQKYsXMZmlHuuyFH06JCYJTYEL1lvCYcjVrIt0CRF082Qm4oHnnj0/n/gr8gkzaf8nit/b/bucket-euoraf4-site/o/2020-11-30-Configurando-OCI-CLI/cli-02.png)
 
 Tenancy OCID: Navegue até Administration>Compartment>Tenancy Details
 
-![Tenancy-Ocid](https://objectstorage.sa-saopaulo-1.oraclecloud.com/p/AgiXs372OaF4Jl9P2gdjVXpgceo-c_u7So_hh2oFnDolVOGFv3VwgCEniswKKxQB/n/gr8gkzaf8nit/b/bucket-euoraf4-site/o/2020-11-30-Configurando-OCI-CLI/tenancy-ocid.png)
+![cli-03](https://objectstorage.sa-saopaulo-1.oraclecloud.com/p/1n38wKfEf0w-BErgc9ZY5EeLe0SOEglJiA3XE9WT1Fq2T0sjRTNp2VrDS7THnoCz/n/gr8gkzaf8nit/b/bucket-euoraf4-site/o/2020-11-30-Configurando-OCI-CLI/cli-03.png)
 
 Para iniciar o processo de configuração execute o comando abaixo, aceite as configurações default ou personalize conforme a necessidade. Salve o diretório de armazenamento do arquivo config e SSH Key.
 
