@@ -15,15 +15,15 @@ comments: true
 
 **Compartment:** Crie uma compartment para organizar os recursos que serão provisionados. Acesse a console administrativa da Oracle Cloud Infrastructure e vá até **Identity > Compartments > Create Compartment**.
 
-![compartment](https://objectstorage.sa-saopaulo-1.oraclecloud.com/p/ZLAwcM1XYlT_lkBcSn0NeJ4dOM-wi1abvj3xyDBawvFVT4umlvc4P6fdGDNc7G-c/n/gr8gkzaf8nit/b/bucket-euoraf4-site/o/POST-VCN/compartment.png)
+![compartment](https://objectstorage.sa-saopaulo-1.oraclecloud.com/p/PO5B4oaCU3ZT3tgar-MMbqAVxUGtIwvDcYkCFOc5dZzHLswBoxWF16HrWjcmGpnw/n/gr8gkzaf8nit/b/bucket-euoraf4-site/o/POST-VCN/compartment.png)
 
 **VCN:** Navegue até **Networking > Virtual Cloud Networks** , selecione o compartment desejado e click em **Start VCN Wizard.**
 
-![Wizard-01](https://objectstorage.sa-saopaulo-1.oraclecloud.com/p/elm_Z_qoSXZhZzQFIe9F8qfSgRVY4bWRIZ7bTfFIzbgJL7x-gij3be0vB2CVqMx7/n/gr8gkzaf8nit/b/bucket-euoraf4-site/o/POST-VCN/wizard-01.png)
+![Wizard-01](https://objectstorage.sa-saopaulo-1.oraclecloud.com/p/GUKPr5_WgBuD-F9iel-uJStKSQ3skEYeOpJze4LmZcKNEl9gY2CaVHav7LPVJ6EQ/n/gr8gkzaf8nit/b/bucket-euoraf4-site/o/POST-VCN/wizard-01.png)
 
 Escolha a opção **VCN with Internet Connectivity** para criar uma VCN com conexão com a internet, assim todos os recursos necessários para conectividade externa será criada.
 
-![Wizard-02](https://objectstorage.sa-saopaulo-1.oraclecloud.com/p/Gqq3Wwt2GxPnZZLt9AqBb2fomv24IQ9Mx4Pp_Ha67X5ON_m3Ohqzz2qtWyqmiDA1/n/gr8gkzaf8nit/b/bucket-euoraf4-site/o/POST-VCN/wizard-02.png)
+![Wizard-02](https://objectstorage.sa-saopaulo-1.oraclecloud.com/p/rUtYWUSueX0FoOCj5AN5Iqy2VDuf403UaeNEpBTN7LJEUwvdK_QTIWfGqYLCVTBB/n/gr8gkzaf8nit/b/bucket-euoraf4-site/o/POST-VCN/wizard-02.png)
 
 - Name: VCN-wizard
 - Compartment: compartment-test
@@ -32,7 +32,7 @@ Escolha a opção **VCN with Internet Connectivity** para criar uma VCN com cone
 - Private Subnet CIDR BLOCK: 10.0.1.0/24
 - DNS Resolution: VCNwizard
 
-![Wizard-04](https://objectstorage.sa-saopaulo-1.oraclecloud.com/p/o8Ayy2Z9WKCcFjHG2UF3cXBN5-eG3nbIlzGXoR-FLhhyhILGpAeqV9CdOd1S3iG4/n/gr8gkzaf8nit/b/bucket-euoraf4-site/o/POST-VCN/wizard-04.png)
+![Wizard-04](https://objectstorage.sa-saopaulo-1.oraclecloud.com/p/AGk4L8I6rXmW4EI2YzaoF-be35ElY3cQSE3H99zOplmmhAKAEiaMrl__cZG93m4y/n/gr8gkzaf8nit/b/bucket-euoraf4-site/o/POST-VCN/wizard-04.png)
 
 Observe os recursos que serão criados automaticamente para a VCN e clique em **Next**.
 
@@ -51,13 +51,13 @@ Observe os recursos que serão criados automaticamente para a VCN e clique em **
 - NAT Gateway: NAT Gateway-VCN-wizard
 - Service Gateway: Service Gateway-VCN-wizard
 
-![Wizard-05](https://objectstorage.sa-saopaulo-1.oraclecloud.com/p/yRQHxfPW4z3oS4qc5dQCKN6cBs-z8YjfHT2xjmB1gQ_yx8keelpj04t4Rl8blvd8/n/gr8gkzaf8nit/b/bucket-euoraf4-site/o/POST-VCN/wizard-05.png)
+![Wizard-05](https://objectstorage.sa-saopaulo-1.oraclecloud.com/p/7HpjlyqI5YsLn426HQXWq6u1Gbk4HqR0UAgSvT5YNlJ_tkVYokvH0VgkuZQzV8an/n/gr8gkzaf8nit/b/bucket-euoraf4-site/o/POST-VCN/wizard-05.png)
 
-![Wizard-06](https://objectstorage.sa-saopaulo-1.oraclecloud.com/p/SxD8rWfmkBRgGbOADp40wuNzRpxaOoOA5Ui7ekG0b8Bczp1XlWPfN-IJt5hI8aHj/n/gr8gkzaf8nit/b/bucket-euoraf4-site/o/POST-VCN/wizard-06.png)
+![Wizard-06](https://objectstorage.sa-saopaulo-1.oraclecloud.com/p/c9TY27CtiXrPlMyRIty0NwFYaVxv_HaN8RjQOg_g7ImotY3Chg5c6y1FaWxv7px3/n/gr8gkzaf8nit/b/bucket-euoraf4-site/o/POST-VCN/wizard-06.png)
 
 Certifique-se que todos os recursos foram criados corretamente em **Networking > Virtual Cloud Networks > VCN-wizard**.
 
-![Wizard-07](https://objectstorage.sa-saopaulo-1.oraclecloud.com/p/ENEs-ejd6RoNUvU6-KLqmMZjW6GuftqiYh41TbRhsYmp05skG4vWeS9mqtBNqIqE/n/gr8gkzaf8nit/b/bucket-euoraf4-site/o/POST-VCN/wizard-07.png)
+![Wizard-07](https://objectstorage.sa-saopaulo-1.oraclecloud.com/p/ltmZDuv5EGKkjonlNBBZk82Hm3FHwNAbGQjJIMAoN7zO-CGTrbI1tJGdLB15AvOo/n/gr8gkzaf8nit/b/bucket-euoraf4-site/o/POST-VCN/wizard-07.png)
 
 **Aproveite a VCN recém criada e provisione uma Instance VM seguindo [estas instruções](https://smallskills.github.io/2020-12-04-Configurando-OCI-CLI/).**
 
@@ -65,7 +65,7 @@ Certifique-se que todos os recursos foram criados corretamente em **Networking >
 
 **Compartment:** Crie uma compartment para organizar os recursos que serão provisionados. Acesse a console administrativa da Oracle Cloud Infrastructure e vá até **Identity > Compartments > Create Compartment**.
 
-![compartment](https://objectstorage.sa-saopaulo-1.oraclecloud.com/p/ZLAwcM1XYlT_lkBcSn0NeJ4dOM-wi1abvj3xyDBawvFVT4umlvc4P6fdGDNc7G-c/n/gr8gkzaf8nit/b/bucket-euoraf4-site/o/POST-VCN/compartment.png)
+![compartment](https://objectstorage.sa-saopaulo-1.oraclecloud.com/p/PO5B4oaCU3ZT3tgar-MMbqAVxUGtIwvDcYkCFOc5dZzHLswBoxWF16HrWjcmGpnw/n/gr8gkzaf8nit/b/bucket-euoraf4-site/o/POST-VCN/compartment.png)
 
 **VCN:** Crie a VCN em até **Networking > Virtual Cloud Networks > Create VCN**.
 - Name: VCN
@@ -73,13 +73,13 @@ Certifique-se que todos os recursos foram criados corretamente em **Networking >
 - CIDR BLOCK: 10.0.0.0/16
 - DNS Resolution: vcn
 
-![VCN-01](https://objectstorage.sa-saopaulo-1.oraclecloud.com/p/Y3zwEO7ChkKdwPX28xYrRnzwn7Mzk5FukxIKLdG2RAFqAMjm91mqxVbm_Whr5SM0/n/gr8gkzaf8nit/b/bucket-euoraf4-site/o/POST-VCN/VCN-01.png)
+![VCN-01](https://objectstorage.sa-saopaulo-1.oraclecloud.com/p/EnjfQlMW-xHRUlXYq6iEvsV04fGqSEujliJzgCN0LOiV7-oEe42Hfz57o1T8HnHF/n/gr8gkzaf8nit/b/bucket-euoraf4-site/o/POST-VCN/VCN-01.png)
 
 **Internet Gateway:** Crie um Internet Gateway em **Networking > Virtual Cloud Networks > VCN > Internet Gateways**.
 - Name: internet-gateway
 - Compartment: compartment-test
 
-![VCN-02](https://objectstorage.sa-saopaulo-1.oraclecloud.com/p/KR8sBCs6F_AsXkj5FFdyP9GlrTxIeANwe6wAN2w5psW1OnIBBUjHyLTW98seSmUu/n/gr8gkzaf8nit/b/bucket-euoraf4-site/o/POST-VCN/VCN-02.png)
+![VCN-02](https://objectstorage.sa-saopaulo-1.oraclecloud.com/p/3KzF8mzWu87Fm3bvUiM8lIhuTrB9bRK2_QDf37fp6f5dX6wu0QEr2Xd8y7eIRJ2g/n/gr8gkzaf8nit/b/bucket-euoraf4-site/o/POST-VCN/VCN-02.png)
 
 **Route Table:** Crie uma Route Table que será usada para permitir acesso à internet a partir da VCN em **Networking > Virtual Cloud Networks > VCN > Route Tables**.
 - Name: route-table
@@ -88,7 +88,7 @@ Certifique-se que todos os recursos foram criados corretamente em **Networking >
 - Compartment: compartment-test
 - Target Internet Gateway: internet-gateway
 
-![VCN-03](https://objectstorage.sa-saopaulo-1.oraclecloud.com/p/8-A3V1NkDc_UVsrIepjYAUp_EtRfs-QisMFiRK1LKjFkJes7feAHBuqX0OvynlpS/n/gr8gkzaf8nit/b/bucket-euoraf4-site/o/POST-VCN/VCN-03.png)
+![VCN-03](https://objectstorage.sa-saopaulo-1.oraclecloud.com/p/MpajUxDylmAttYoxg3mWr232RQsTuRYY2YLaZdfnjhxTzKtg9KiQZFaqvi45gM_c/n/gr8gkzaf8nit/b/bucket-euoraf4-site/o/POST-VCN/VCN-03.png)
 
 **Public Subnet:** Crie uma Public Subnet em **Networking > Virtual Cloud Networks > VCN > Subnets**.
 - Name: public-subnet
@@ -101,9 +101,9 @@ Certifique-se que todos os recursos foram criados corretamente em **Networking >
 - DHCP Options: Default DHCP
 - Security List: Default Security List
 
-![VCN-06](https://objectstorage.sa-saopaulo-1.oraclecloud.com/p/1XjGtfCjr1vXO0giXh_q3W7v-vnHxchU_0lWsCybz1zvWKddnsp3ErnRP0U3iIdU/n/gr8gkzaf8nit/b/bucket-euoraf4-site/o/POST-VCN/VCN-06.png)
+![VCN-06](https://objectstorage.sa-saopaulo-1.oraclecloud.com/p/ef8b3q8rf7q3mTCu0xxWH8aURbqk9EVyKc47-wkkHjuEpQqI0QoPPSsjbRIFhtdw/n/gr8gkzaf8nit/b/bucket-euoraf4-site/o/POST-VCN/VCN-06.png)
 
-![VCN-05](https://objectstorage.sa-saopaulo-1.oraclecloud.com/p/DWlmOTjzAzyA37jUHUlLBesHJlv5_PTpLCU9w7i_G_Qg400l1vRN0Ilt5ADS7X_H/n/gr8gkzaf8nit/b/bucket-euoraf4-site/o/POST-VCN/VCN-05.png)
+![VCN-05](https://objectstorage.sa-saopaulo-1.oraclecloud.com/p/ahgQyUXqPE-x5ML31aYLHLVhhrnyW0rp8Ui1dRSo7dHtF4j2jcX0ZsmB7iR2e-rc/n/gr8gkzaf8nit/b/bucket-euoraf4-site/o/POST-VCN/VCN-05.png)
 
 **Private Subnet:** Crie uma Private Subnet em **Networking > Virtual Cloud Networks > VCN > Subnets**.
 - Name: private-subnet
@@ -116,9 +116,9 @@ Certifique-se que todos os recursos foram criados corretamente em **Networking >
 - DHCP Options: Default DHCP
 - Security List: Default Security List
 
-![VCN-08](https://objectstorage.sa-saopaulo-1.oraclecloud.com/p/MJb5NYrF2fELQLlHL9qIbh49uXOIkyA9nMjciptSKeNzMsORtzlOhoz99ukXiIV2/n/gr8gkzaf8nit/b/bucket-euoraf4-site/o/POST-VCN/VCN-08.png)
+![VCN-08](https://objectstorage.sa-saopaulo-1.oraclecloud.com/p/Js4XAzGesQwjJolcIoDoSVGTE5UBD-LnvR8p1IlUGUjVX3fN5Vz66tH5fOprSgh9/n/gr8gkzaf8nit/b/bucket-euoraf4-site/o/POST-VCN/VCN-08.png)
 
-![VCN-07](https://objectstorage.sa-saopaulo-1.oraclecloud.com/p/8zAyR16Qv-DKWT7c-givfYWoRYEt5_DebHebHfRKha4UNYXkxGxCfAm7A9WD9xaL/n/gr8gkzaf8nit/b/bucket-euoraf4-site/o/POST-VCN/VCN-07.png)
+![VCN-07](https://objectstorage.sa-saopaulo-1.oraclecloud.com/p/L-EEu9N06gtgmLOf_Jvi6Um8e82Kw7Vdku7bE7_RpOmgRy1zjm2cWXSihIt0l4mF/n/gr8gkzaf8nit/b/bucket-euoraf4-site/o/POST-VCN/VCN-07.png)
 
 **Aproveite a VCN recém criada e provisione uma Instance VM seguindo [estas instruções](https://smallskills.github.io/2020-12-04-Configurando-OCI-CLI/).**
 
@@ -126,7 +126,7 @@ Certifique-se que todos os recursos foram criados corretamente em **Networking >
 
 Caso você não tenha OCI-CLI instalado clique [aqui](https://smallskills.github.io/2020-12-04-Configurando-OCI-CLI/) para configurar ou use o **Oracle Cloud Shell** a partir da console administrativa da Oracle Cloud Infrastructure.
 
-![cloud-shell](https://objectstorage.sa-saopaulo-1.oraclecloud.com/p/mD3PmxYZP3IKYEsOnT4pAEkJOnHxNkPa-F-4DwaY6aFglc0oY37f44ZTuyW_IN3q/n/gr8gkzaf8nit/b/bucket-euoraf4-site/o/POST-VCN/cloud-shell.png)
+![cloud-shell](https://objectstorage.sa-saopaulo-1.oraclecloud.com/p/_IRsnWh3PADnAuUx0e6ny-Q6acBGMLi2uw0ZMURhAgcMdwTluVwN2OMBxl4ZBMK5/n/gr8gkzaf8nit/b/bucket-euoraf4-site/o/POST-VCN/cloud-shell.png)
 
 Para provisionar a VCN via CLI é necessário obter o OCID de alguns recursos. É possível consultar na console administrativa, mas neste caso será usada **query** no CLI para retornar o OCID e variáveis de ambiente para automatizar o processo, observe o **comando export** no início de alguns scripts.
 
