@@ -91,16 +91,16 @@ Insira seu número de celular para validação via mensagem de texto.
 
 Clique em **Adicionar um método de pagamento**.
 
-![site-07](https://objectstorage.sa-saopaulo-1.oraclecloud.com/p/Tbph9fDtaxqKm4DT7KdA-RnjrtX-dE_VAzb1jdAMxghIqmAmiM5Ez6OkNgKHCedd/n/gr8gkzaf8nit/b/bucket-euoraf4-site/o/FREE-TIER/site07.png)
+![site-07](https://objectstorage.sa-saopaulo-1.oraclecloud.com/p/3Am0igoT2rgjgIC1iuxe9M9DT6DqLndtZzRz0kGOVIDMDOczJuLZCgBQRKrGIqI3/n/gr8gkzaf8nit/b/bucket-euoraf4-site/o/FREE-TIER/site07.png)
 
 Insira os dados de um cartão de crédito internacional, será processada uma compra de US$1 que será estornada posteriomente.
 
-![site-08](https://objectstorage.sa-saopaulo-1.oraclecloud.com/p/o3fvEaI0WNuj9oIT7ic9ky1tw6oSqr0nU_EIZ-9-fSK4iOuMyhaOLA0d90lieXYv/n/gr8gkzaf8nit/b/bucket-euoraf4-site/o/FREE-TIER/site08.png)
+![site-08](https://objectstorage.sa-saopaulo-1.oraclecloud.com/p/GGuWDNCmsTOT4YaLfvmYguQM7XqbkgJyyuMtnMyY71uaTjjvHxRisSVlC0YMyGH_/n/gr8gkzaf8nit/b/bucket-euoraf4-site/o/FREE-TIER/site08.png)
 
 Aceite os termos de contrato.
 
-![site-09](https://objectstorage.sa-saopaulo-1.oraclecloud.com/p/D_l5Axqj5EuhAkHpxBQZ9p6CJGC1PzmfbqJXg4tIVWLx8IVhInXWB7_Ts5WCi8zD/n/gr8gkzaf8nit/b/bucket-euoraf4-site/o/FREE-TIER/site09.png)
+![site-09](https://objectstorage.sa-saopaulo-1.oraclecloud.com/p/UkkfB3FXV2brYgcaeP1uZFLT76yQHzjK6cRca4B6-G5Jz-Mcwm247dVCLXrom9WU/n/gr8gkzaf8nit/b/bucket-euoraf4-site/o/FREE-TIER/site09.png)
 
 Acesse sua conta Oracle Cloud Infrastructure.
 
-![site-10](https://objectstorage.sa-saopaulo-1.oraclecloud.com/p/59OwCJz1UkZn3Npun_RP1X5asJ0m51knw-g8Fhz880ohhFd9WvBQMnBZqtIXnaZH/n/gr8gkzaf8nit/b/bucket-euoraf4-site/o/FREE-TIER/site10.png)
+![site-10](https://objectstorage.sa-saopaulo-1.oraclecloud.com/p/CrebDw5o3pxcK-EJDsTv60V_4qfxtY1x4Car78gs73rIhmZOC9UbYB9-39-LwsLe/n/gr8gkzaf8nit/b/bucket-euoraf4-site/o/FREE-TIER/site10.png)
