@@ -57,7 +57,7 @@ Para iniciar o processo de configuração execute o comando abaixo, aceite as co
 ```javascript
 oci setup config
 ```
-![Oci-Setup](https://objectstorage.sa-saopaulo-1.oraclecloud.com/p/Wu9yqvH68zmY2b7VbxXnbi1pwXZl54R7-YfNC8WVNpf-kz_xCczdbvMNjpwQagLy/n/gr8gkzaf8nit/b/bucket-euoraf4-site/o/2020-11-30-Configurando-OCI-CLI/oci-setup-config.png)
+![cli-04](https://objectstorage.sa-saopaulo-1.oraclecloud.com/p/OfpO6KKw9UbfjCEAaHV0xvtq4C6oOLjhmA4BOxD5cY0sai-k-aHfdbvS7MogkaE3/n/gr8gkzaf8nit/b/bucket-euoraf4-site/o/2020-11-30-Configurando-OCI-CLI/cli-04.png)
 
 Nesta etapa será criada uma API Keys e será utilizado a public key recém criada nesse processo.
 
@@ -71,23 +71,23 @@ $ vim oci_api_key_public.pem
 ```
 Copie o conteúdo completo da Public Key.
 
-![Public-Key](https://objectstorage.sa-saopaulo-1.oraclecloud.com/p/vOVDjB3xmwdJUYLaQRSVXluCGDaCtPUbN0gv6At8kYdtnrgLK5wJSptvLISA0nxT/n/gr8gkzaf8nit/b/bucket-euoraf4-site/o/2020-11-30-Configurando-OCI-CLI/public-key.png)
+![cli-05](https://objectstorage.sa-saopaulo-1.oraclecloud.com/p/xv26tqbPsJntUwCGilSQMhUjwJM1G4TbD5bcW1qRaU5UUnbx6KtcaG06ImjPZ130/n/gr8gkzaf8nit/b/bucket-euoraf4-site/o/2020-11-30-Configurando-OCI-CLI/cli-05.png)
 
 **Windows**
 
 Abra a Public Key com notepad e copie todo o conteúdo.
 
-![Public-Key-Windows](https://objectstorage.sa-saopaulo-1.oraclecloud.com/p/vOVDjB3xmwdJUYLaQRSVXluCGDaCtPUbN0gv6At8kYdtnrgLK5wJSptvLISA0nxT/n/gr8gkzaf8nit/b/bucket-euoraf4-site/o/2020-11-30-Configurando-OCI-CLI/public-key.png)
+![cli-05](https://objectstorage.sa-saopaulo-1.oraclecloud.com/p/xv26tqbPsJntUwCGilSQMhUjwJM1G4TbD5bcW1qRaU5UUnbx6KtcaG06ImjPZ130/n/gr8gkzaf8nit/b/bucket-euoraf4-site/o/2020-11-30-Configurando-OCI-CLI/cli-05.png)
 
 Acesse a console Oracle Cloud e vá até o caminho Identity>Users>Seu User>API Keys>Add API Key.
 
 Selecione "Paste Public Key", cole o conteúdo da Public Key e clique em Add.
 
-![Api-Key](https://objectstorage.sa-saopaulo-1.oraclecloud.com/p/GFEO45ZEfNHoh4PEG-JULwJJ5h-sPIdLFyc8kRyIUiPalFoyrwEd4CdkCPVZhnT2/n/gr8gkzaf8nit/b/bucket-euoraf4-site/o/2020-11-30-Configurando-OCI-CLI/api-key.png)
+![cli-06](https://objectstorage.sa-saopaulo-1.oraclecloud.com/p/-vYmSNY9tlIsirHCmrTFpzk78Y0dYM9KYvfFO2gO9zoDb909ouPpiga7Vrlj98S5/n/gr8gkzaf8nit/b/bucket-euoraf4-site/o/2020-11-30-Configurando-OCI-CLI/cli-06.png)
 
 Após adicionada a API Key é gerada um Fingerprint. 
 
-![Finger-Print](https://objectstorage.sa-saopaulo-1.oraclecloud.com/p/J-fdWrzqA79ic4IYMXvSTJg0gslBP0R1KeGY4wfuY0jFus4Kx0ZTago6Uhi2QtJc/n/gr8gkzaf8nit/b/bucket-euoraf4-site/o/2020-11-30-Configurando-OCI-CLI/fingerprint.png)
+![cli-07](https://objectstorage.sa-saopaulo-1.oraclecloud.com/p/WIv_A6X6rBOnY4wWpTFa39xRJtLYXJP9nXL_Bus5H5mNSzTFnNb1bBogGt_xZ3f1/n/gr8gkzaf8nit/b/bucket-euoraf4-site/o/2020-11-30-Configurando-OCI-CLI/cli-07.png)
 
 Visualize o arquivo de configuração.
 
@@ -98,13 +98,13 @@ $ cd /home/ubuntu/.oci/
 $ cat config
 ```
 
-![Config-Cat](https://objectstorage.sa-saopaulo-1.oraclecloud.com/p/QP1n5BBih4rC9YNK2DSH5bS3xtB5NJZSqtGeIsJr-xsNbuZqbf1ucSKhplx_QIm7/n/gr8gkzaf8nit/b/bucket-euoraf4-site/o/2020-11-30-Configurando-OCI-CLI/config.png)
+![cli-08](https://objectstorage.sa-saopaulo-1.oraclecloud.com/p/PA1xwT1YdFs8uyfK1VtgbqKHHcKmIeyeLeOsprxWbXEBKjwFhMe5TXFLuk5u9BI7/n/gr8gkzaf8nit/b/bucket-euoraf4-site/o/2020-11-30-Configurando-OCI-CLI/cli-08.png)
 
 **Windows**
 
 Navegue até o diretório do arquivo config e abra com notepad.
 
-![Config-Cat-Windows](https://objectstorage.sa-saopaulo-1.oraclecloud.com/p/uEdpaH0pQjgD4EQ04W7AqkVGFTqKIkaWt180qI7FpypikIpvb46_hukwPIV3qbT3/n/gr8gkzaf8nit/b/bucket-euoraf4-site/o/2020-11-30-Configurando-OCI-CLI/config-windows.png)
+![cli-09](https://objectstorage.sa-saopaulo-1.oraclecloud.com/p/vxG8Srd2nTULCGoA5VbanwE4ZTSVW5Hg7QNUEZJ-t8EprOQkH1occ7T_JpKxA3G8/n/gr8gkzaf8nit/b/bucket-euoraf4-site/o/2020-11-30-Configurando-OCI-CLI/cli-09.png)
 
 Certifique-se que a configuração foi bem sucedida listando os compartments do Tenancy.
 
@@ -112,7 +112,7 @@ Certifique-se que a configuração foi bem sucedida listando os compartments do 
 $ oci iam compartment list
 ```
 
-![Compartment-List](https://objectstorage.sa-saopaulo-1.oraclecloud.com/p/FmAMKaP-SLgK1KhRNlVZGlXRsg0qTQD0PPydkh4BnKz7z7R3Usd8p64-Td6J0Jpc/n/gr8gkzaf8nit/b/bucket-euoraf4-site/o/2020-11-30-Configurando-OCI-CLI/compartment-list.png)
+![cli-10](https://objectstorage.sa-saopaulo-1.oraclecloud.com/p/7Z6bf47oRoEanLwvqYKyfKqFmVTKhubaUo29OQtfVqDNQ5yRYvfk158yVr9pTWlI/n/gr8gkzaf8nit/b/bucket-euoraf4-site/o/2020-11-30-Configurando-OCI-CLI/cli-10.png)
 
 ## Deploy de uma Instance VM com OCI-CLI
 
@@ -156,7 +156,7 @@ $ oci compute image list --compartment-id ocid1.compartment.oc1..aaaaaaaayu2eqzz
 
 **Shape:** Utilize o shape **VM.Standard.E2.1.Micro** que faz parte dos recursos **Always Free** , consulte todos os shapes disponíveis no site oficial [Oracle Cloud Infrastructure.](https://docs.cloud.oracle.com/en-us/iaas/Content/Compute/References/computeshapes.htm)
 
-![Resources-Get](https://objectstorage.sa-saopaulo-1.oraclecloud.com/p/pACSZBitORcnthvHOrTAg4R5nFyflz6fP3Es08mvZ4kxE8nwsYt10ZzAcwRwpHDY/n/gr8gkzaf8nit/b/bucket-euoraf4-site/o/2020-11-30-Configurando-OCI-CLI/resource-get.png)
+![cli-11](https://objectstorage.sa-saopaulo-1.oraclecloud.com/p/ipvT0uOwAYjzTClJfHrfloPPcZcF9fiSDoCKCCiVBM7jQVJ7u2Exwsq9s1NUHMhA/n/gr8gkzaf8nit/b/bucket-euoraf4-site/o/2020-11-30-Configurando-OCI-CLI/cli-11.png)
 
 **Iniciando Deploy da Instance VM**
 
@@ -180,7 +180,7 @@ $ oci compute instance launch --availability-domain syxp:SA-SAOPAULO-1-AD-1 --co
 
 Aguarde até que o estado da Intance VM seja Running.
 
-![VM-Run](https://objectstorage.sa-saopaulo-1.oraclecloud.com/p/frjmu6F0Z5y29QjmRqTmV8xDhwrUcLPBHN6E0NsT6p3loROKM2m6-BPcNFlAXsqL/n/gr8gkzaf8nit/b/bucket-euoraf4-site/o/2020-11-30-Configurando-OCI-CLI/running-instance.png)
+![cli-12](https://objectstorage.sa-saopaulo-1.oraclecloud.com/p/v5WENWAKlT54Rd_dSRSt6_0lBB00FCehl2oXwITcMwYXQyzaGhsOuiwuSquYL7c0/n/gr8gkzaf8nit/b/bucket-euoraf4-site/o/2020-11-30-Configurando-OCI-CLI/cli-12.png)
 
 Acesse a Instance VM recém criada.
 
@@ -191,7 +191,7 @@ $ chmod 400 /home/ubuntu/keys/key-test
 $ ssh -i /home/ubuntu/keys/key-test opc@152.67.40.241
 ```
 
-![Access-macos](https://objectstorage.sa-saopaulo-1.oraclecloud.com/p/MiuLVTjjSNXUtaqxJCT_CAI0z4Ia9B7OUbOE87GjmXgOorvN5fL3b-kICe9tbZhT/n/gr8gkzaf8nit/b/bucket-euoraf4-site/o/2020-11-30-Configurando-OCI-CLI/access-macos.png)
+![cli-13](https://objectstorage.sa-saopaulo-1.oraclecloud.com/p/V8QXPYRNP8g9ZLUK13BRtam-RSk72Knjal9E07wBv86UEdC-SLlCod4D3Bw2gcGU/n/gr8gkzaf8nit/b/bucket-euoraf4-site/o/2020-11-30-Configurando-OCI-CLI/cli-13.png)
 
 **Windows**
 
@@ -202,7 +202,7 @@ $ chmod 400 'C:\keys\key-test'
 $ ssh -i 'C:\keys\key-test' opc@152.67.40.241
 ```
 
-![Acess-Windows](https://objectstorage.sa-saopaulo-1.oraclecloud.com/p/MKR3wsGjo5S0o1C-i19XtWHpINaXKoPA0qFYYNqCus9fUhkXl4I7jW-sue1tZbU6/n/gr8gkzaf8nit/b/bucket-euoraf4-site/o/2020-11-30-Configurando-OCI-CLI/access-windows.png)
+![cli-14](https://objectstorage.sa-saopaulo-1.oraclecloud.com/p/QgtX0qJGOS3Sfil9Oi6Kcfwv5jBc7HXjcmlYHcRj9bG_ruBnQrivWbkZqTFXQ676/n/gr8gkzaf8nit/b/bucket-euoraf4-site/o/2020-11-30-Configurando-OCI-CLI/cli-14.png)
 
 Agora você é capaz de acessar o OCI-CLI e criar Instances VMs na Oracle Cloud Infrastructure.
 
