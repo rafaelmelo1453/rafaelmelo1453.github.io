@@ -51,7 +51,7 @@ Qualquer pessoa que não tenha se inscrito anteriormente no Oracle Cloud Free Ti
 
 Acesse a página da [Oracle Cloud Free Tier](https://www.oracle.com/cloud/free) e clique em **Start Free Tier**.
 
-![site-01](https://objectstorage.sa-saopaulo-1.oraclecloud.com/p/YTMCwc5PeCT69oFgLdh29jJXGR12ACld58wvmDTDWipVXw2IBZEx2fTR9lc3ZuCE/n/gr8gkzaf8nit/b/bucket-euoraf4-site/o/FREE-TIER/site01.png)
+![site-01](https://objectstorage.sa-saopaulo-1.oraclecloud.com/p/QT4wrUfo8EbmbzXFpvXTzugn7vSfbqAh7RAmNUnAeIHQnY623wKVfM3OCE9dWduU/n/gr8gkzaf8nit/b/bucket-euoraf4-site/o/FREE-TIER/site01.png)
 
 Preencha os dados solicitados.
 
