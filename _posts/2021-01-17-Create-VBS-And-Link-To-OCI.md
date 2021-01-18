@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Criando Visual Builder Studio e vinculando tenancy OCI
+title: Habilitando Visual Builder Studio e vinculando ao Oracle Cloud
 subtitle: Criando conta do Visual Builder Studio e conectando tenancy do Oracle Cloud Infrastructure
 tags: [Cloud, Oracle, OCI, CLI, Visual Builder Studio, DevCS, DevOps]
 comments: true
