@@ -2,6 +2,8 @@
 layout: post
 title: Como adicionar regiões ao Oracle Cloud Infrastructure
 subtitle: Como habilitar multiplas regiões na Oracle Cloud Infrastructure
+share-img: /assets/img/oci.jpg
+thumbnail-img: /assets/img/oci.jpg
 tags: [Cloud, Oracle, OCI, Pay-as-You-Go, Região, Limites]
 comments: true
 ---
