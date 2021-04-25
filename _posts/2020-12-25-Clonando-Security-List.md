@@ -2,6 +2,8 @@
 layout: post
 title: Clonando uma Security List
 subtitle: Como copiar regras entre security lists com OCI CLI
+share-img: /assets/img/oci.jpg
+thumbnail-img: /assets/img/oci.jpg
 tags: [Cloud, Oracle, OCI, CLI, Security List, Ingress, Egress]
 comments: true
 ---
