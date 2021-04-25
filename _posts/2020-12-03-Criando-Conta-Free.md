@@ -2,6 +2,8 @@
 layout: post
 title: Criando uma conta free na Oracle Cloud Infrastructure
 subtitle: Como criar uma conta gratuita Oracle Cloud com R$1500,00 de créditos por 30 dias
+share-img: /assets/img/oci.jpg
+thumbnail-img: /assets/img/oci.jpg
 tags: [Cloud, Oracle, OCI, Free Tier, Always Free]
 comments: true
 ---
