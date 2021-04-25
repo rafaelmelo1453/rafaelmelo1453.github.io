@@ -2,6 +2,8 @@
 layout: post
 title: Como exportar usuários do Azure AD para Oracle Cloud e Oracle IDCS
 subtitle: Sincronize os usuários do Azure AD para Oracle Cloud Infrastructure e Oracle IDCS 
+share-img: /assets/img/oci.jpg
+thumbnail-img: /assets/img/oci.jpg
 tags: [Cloud, Oracle, Azure, Azure AD, User, Group, Sync, IDCS]
 comments: true
 ---
