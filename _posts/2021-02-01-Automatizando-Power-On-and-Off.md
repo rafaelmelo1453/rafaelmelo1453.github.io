@@ -2,6 +2,8 @@
 layout: post
 title: Automatizando Power On/Off de recursos OCI
 subtitle: Economize habilitando o Power On/Off em recursos que não operam 24/7
+share-img: /assets/img/oci.jpg
+thumbnail-img: /assets/img/oci.jpg
 tags: [Cloud, Oracle, OCI, CLI, Visual Builder Studio, DevCS, Cost, Schedule, Shell]
 comments: true
 ---
