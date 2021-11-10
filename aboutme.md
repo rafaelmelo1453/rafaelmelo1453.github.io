@@ -6,16 +6,12 @@ subtitle: O que será que você está procurando aqui?
 
 Meu nome é Rafael Melo. Engenheiro de Computação, Pós-graduando em Gestão de Projetos pela USP. Possuo as seguintes hard skills:
 
-- Azure Cloud
 - Oracle Cloud
-- Windows Server
+- Azure Cloud
 - Linux
-- ITIL® 4
-- Network
+- Windows Server
 - DevOps
-- Firewall
-- Datacenter
-- SolarWinds
+- ITIL® 4
 
 O que mais você precisa?
 
