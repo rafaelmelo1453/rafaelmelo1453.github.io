@@ -10,13 +10,32 @@ comments: true
 
 OCI DevOps é um serviço Oracle Cloud Native para Integração e Entrega Contínua (CI/CD), neste tutorial usaremos para criar uma pipeline para implantar uma aplicação num cluster OKE. 
 
-Antes de iniciar os trabalhos com OCI DevOps será necessário realizar Push da imagem para o OCIR (Oracle Cloud Infrastructure Registry).
+## Criando um Repository para armazenar Imagens.
+
+Na Console de OCI navegue até **Developer Services** e clique em **Container Registry**. 
+
+- Escolha o compartment e região em que você trabalhará (neste exemplo, br-est-sao-work e sa-saopaulo-1).
+
+![devops-01](https://objectstorage.sa-saopaulo-1.oraclecloud.com/p/VBDyGiRs1ur5DMLj9Ic5oSsJusz8ViCPmDc1WaAa0ynwBnSzzAEkwOG3Hh-KiJrA/n/gr8gkzaf8nit/b/bucket-euoraf4-site/o/POST-DEVOPS-PIPELINE/devops-01.png)
+
+Clique em **Create Repository.**
+
+- Escolha o compartment.
+- Insira um nome para o repositório (neste exemplo, helloworld).
+- Selecione a opção **Private.**
+
+Então clique em **Create Repository** para finalizar.
+
+![devops-02](https://objectstorage.sa-saopaulo-1.oraclecloud.com/p/VBDyGiRs1ur5DMLj9Ic5oSsJusz8ViCPmDc1WaAa0ynwBnSzzAEkwOG3Hh-KiJrA/n/gr8gkzaf8nit/b/bucket-euoraf4-site/o/POST-DEVOPS-PIPELINE/devops-02.png)
+
+- Insira uma descrição e novamente clique em **Generate Token.**
+- Copie o auth token imediatamente para um notepad, pois não é possível recuperá-lo após fechar.
+
+![oac-04](https://objectstorage.sa-saopaulo-1.oraclecloud.com/p/zcjayskMSkCdIGyBwFx3w0T7HIFAAQOYJ4xkunGXVZ1FJpcEmoDVUNFpru1_q-8d/n/gr8gkzaf8nit/b/bucket-euoraf4-site/o/OAC-PAC/oac-4.png)
 
 ## Push uma Imagem para o OCIR (Oracle Cloud Infrastructure Registry).
 
-
-
-Na Console de OCI navegue até **Profile** e clique em **User Sttings**. 
+Na Console de OCI navegue até **Profile** e clique em **User Settings**. 
 
 ![oac-01](https://objectstorage.sa-saopaulo-1.oraclecloud.com/p/SbYQCekItBp_5ngn6uEP6ozz6ZCSPKGLrMyUqgVI_FAaa2Z5ATolu3uAEmTkJ-Dj/n/gr8gkzaf8nit/b/bucket-euoraf4-site/o/OAC-PAC/oac-1.png)
 
