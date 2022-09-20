@@ -14,7 +14,7 @@ OCI DevOps é um serviço Oracle Cloud Native para Integração e Entrega Contí
 
 Na Console de OCI navegue até **Developer Services** e clique em **Container Registry**. 
 
-- Escolha o compartment e região em que você trabalhará (neste exemplo, br-est-sao-work e sa-saopaulo-1).
+- Escolha o compartment e região (neste exemplo, br-est-sao-work e Brazil East, São Paulo).
 
 ![devops-01](https://objectstorage.sa-saopaulo-1.oraclecloud.com/p/VBDyGiRs1ur5DMLj9Ic5oSsJusz8ViCPmDc1WaAa0ynwBnSzzAEkwOG3Hh-KiJrA/n/gr8gkzaf8nit/b/bucket-euoraf4-site/o/POST-DEVOPS-PIPELINE/devops-01.png)
 
@@ -31,22 +31,48 @@ Então clique em **Create Repository** para finalizar.
 - Insira uma descrição e novamente clique em **Generate Token.**
 - Copie o auth token imediatamente para um notepad, pois não é possível recuperá-lo após fechar.
 
-![oac-04](https://objectstorage.sa-saopaulo-1.oraclecloud.com/p/zcjayskMSkCdIGyBwFx3w0T7HIFAAQOYJ4xkunGXVZ1FJpcEmoDVUNFpru1_q-8d/n/gr8gkzaf8nit/b/bucket-euoraf4-site/o/OAC-PAC/oac-4.png)
-
 ## Push uma Imagem para o OCIR (Oracle Cloud Infrastructure Registry).
 
-Na Console de OCI navegue até **Profile** e clique em **User Settings**. 
+Para fazer o push da imagem docker para o OCIR voçe vai precisar das seguintes informações sobre o tenancy OCI:
 
-![oac-01](https://objectstorage.sa-saopaulo-1.oraclecloud.com/p/SbYQCekItBp_5ngn6uEP6ozz6ZCSPKGLrMyUqgVI_FAaa2Z5ATolu3uAEmTkJ-Dj/n/gr8gkzaf8nit/b/bucket-euoraf4-site/o/OAC-PAC/oac-1.png)
+- Tenancy namespace.
+- Username.
+- Auth Token (necessário gerar).
+- Region Key.
 
-Vá até **Auth Tokens** e **Generate Token**
+Para obter o **Tenancy Namespace** clique em **Governance & Administration** e navegue até **Tenancy details**.
 
-![oac-02](https://objectstorage.sa-saopaulo-1.oraclecloud.com/p/T2oHyfbS6q0gCveXiCBtM-yQDXg0q0ExSyxNXdMAOOwKWkldT0N0EnY_V4fGWzQD/n/gr8gkzaf8nit/b/bucket-euoraf4-site/o/OAC-PAC/oac-2.png)
+![devops-03](https://objectstorage.sa-saopaulo-1.oraclecloud.com/p/VBDyGiRs1ur5DMLj9Ic5oSsJusz8ViCPmDc1WaAa0ynwBnSzzAEkwOG3Hh-KiJrA/n/gr8gkzaf8nit/b/bucket-euoraf4-site/o/POST-DEVOPS-PIPELINE/devops-03.png)
+
+Para obter o **Username** vá até **Profile** e clique em **User Settings**.
+
+![devops-04](https://objectstorage.sa-saopaulo-1.oraclecloud.com/p/VBDyGiRs1ur5DMLj9Ic5oSsJusz8ViCPmDc1WaAa0ynwBnSzzAEkwOG3Hh-KiJrA/n/gr8gkzaf8nit/b/bucket-euoraf4-site/o/POST-DEVOPS-PIPELINE/devops-04.png)
+
+Caso seu tenancy seja federado com o Oracle Identity Cloud Service, copie o texto completo incluído o oracleidentitycloudservice.
+
+Ainda em **User Settings** clique em **Auth Tokens** e depois em  **Generate Token** para gerar um novo **Auth Token**.
 
 - Insira uma descrição e novamente clique em **Generate Token.**
 - Copie o auth token imediatamente para um notepad, pois não é possível recuperá-lo após fechar.
 
+![devops-05](https://objectstorage.sa-saopaulo-1.oraclecloud.com/p/VBDyGiRs1ur5DMLj9Ic5oSsJusz8ViCPmDc1WaAa0ynwBnSzzAEkwOG3Hh-KiJrA/n/gr8gkzaf8nit/b/bucket-euoraf4-site/o/POST-DEVOPS-PIPELINE/devops-05.png)
+
+Para obter a Region Key acesse [Regiões e Domínios de Disponibilidade](https://www.oracle.com/cloud/free](https://docs.oracle.com/pt-br/iaas/Content/General/Concepts/regions.htm)
+
+
+
+
+![devops-03](https://objectstorage.sa-saopaulo-1.oraclecloud.com/p/VBDyGiRs1ur5DMLj9Ic5oSsJusz8ViCPmDc1WaAa0ynwBnSzzAEkwOG3Hh-KiJrA/n/gr8gkzaf8nit/b/bucket-euoraf4-site/o/POST-DEVOPS-PIPELINE/devops-03.png)
+
+
+
+
+
 ![oac-04](https://objectstorage.sa-saopaulo-1.oraclecloud.com/p/zcjayskMSkCdIGyBwFx3w0T7HIFAAQOYJ4xkunGXVZ1FJpcEmoDVUNFpru1_q-8d/n/gr8gkzaf8nit/b/bucket-euoraf4-site/o/OAC-PAC/oac-4.png)
+
+
+
+[Oracle Cloud Free Tier](https://www.oracle.com/cloud/free)
 
 **Importante:** O provisionamento do Private Access Channel dura entre 1h e 2h. A console do Analytics Cloud estará acessível, mas pode haver interrupção temporária do serviço durante o provisionamento.
 
