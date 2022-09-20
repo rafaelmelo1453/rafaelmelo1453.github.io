@@ -58,3 +58,4 @@ Ainda em **User Settings** clique em **Auth Tokens** e depois em  **Generate Tok
 ![devops-05](https://objectstorage.sa-saopaulo-1.oraclecloud.com/p/VBDyGiRs1ur5DMLj9Ic5oSsJusz8ViCPmDc1WaAa0ynwBnSzzAEkwOG3Hh-KiJrA/n/gr8gkzaf8nit/b/bucket-euoraf4-site/o/POST-DEVOPS-PIPELINE/devops-05.png)
 
 Para obter a Region Key acesse [Regiões e Domínios de Disponibilidade](https://www.oracle.com/cloud/free](https://docs.oracle.com/pt-br/iaas/Content/General/Concepts/regions.htm)
+
