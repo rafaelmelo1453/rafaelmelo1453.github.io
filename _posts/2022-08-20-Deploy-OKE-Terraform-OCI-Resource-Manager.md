@@ -8,11 +8,12 @@ tags: [Cloud, Oracle, OCI, DevOps, Pipeline, OKE, Cluster, LoadBalancer]
 comments: true
 ---
 
-$$$$$$$$$$$$Recentemente a Oracle tornou disponível o Private Access Channel (PAC) uma solução que permite conectar o Oracle Analytics Cloud à fonte de dados privadas como Oracle Autonomous ADW, Oracle Autonomous ATP e DBSystem.
+OCI DevOps é um serviço Oracle Cloud Native para Integração e Entrega Contínua (CI/CD), neste tutorial usaremos para criar uma pipeline para implantar uma aplicação num cluster OKE. 
 
-$$$$$$$$$$$$Private Access Channel (PAC) é uma alternativa nativa ao Remote Data Gateway (RDG) e deve substitui-lo no futuro, mas atualmente algumas fontes de dados suportam apenas RDG. Importante destacar que RDG e PAC podem ser utilizados simultaneamente em uma mesma instância do Oracle Analytics Cloud na OCI. 
 
 ## Push uma Imagem para o OCIR (Oracle Cloud Infrastructure Registry).
+
+Antes de iniciar os trabalhos com OCI DevOps será necessário realizar Pull da imagem para o OCIR (Oracle Cloud Infrastructure Registry).
 
 Navegue até **Analytics Cloud** clique na Analytics Instance que deseja configurar o Private Access Channel. 
 
