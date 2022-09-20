@@ -57,5 +57,19 @@ Ainda em **User Settings** clique em **Auth Tokens** e depois em  **Generate Tok
 
 ![devops-05](https://objectstorage.sa-saopaulo-1.oraclecloud.com/p/VBDyGiRs1ur5DMLj9Ic5oSsJusz8ViCPmDc1WaAa0ynwBnSzzAEkwOG3Hh-KiJrA/n/gr8gkzaf8nit/b/bucket-euoraf4-site/o/POST-DEVOPS-PIPELINE/devops-05.png)
 
-Para obter a Region Key acesse [Regiões e Domínios de Disponibilidade](https://www.oracle.com/cloud/free](https://docs.oracle.com/pt-br/iaas/Content/General/Concepts/regions.htm)
+Para obter a Region Key acesse [Regiões e Domínios de Disponibilidade](https://www.oracle.com/cloud/free](https://docs.oracle.com/pt-br/iaas/Content/General/Concepts/regions.htm).
+
+Com isso temos todos as informações para os próximos passos.
+
+Abra uma janela do terminal num desktop com Docker instalado, faça login no Oracle Cloud Infrastructure Registry usando o seguinte comando:
+
+```javascript
+# docker login <region-key>.ocir.io
+```
+
+Insira o username com o seguinte formato <tenancy-namespace>/oracleidentitycloudservice/<username> para usuários federados ou <tenancy-namespace>/<username> para **usuários não federados**.
+  
+Então insira o Auth Token copiado anteriomente no lugar da senha.
+  
+![devops-06](https://objectstorage.sa-saopaulo-1.oraclecloud.com/p/VBDyGiRs1ur5DMLj9Ic5oSsJusz8ViCPmDc1WaAa0ynwBnSzzAEkwOG3Hh-KiJrA/n/gr8gkzaf8nit/b/bucket-euoraf4-site/o/POST-DEVOPS-PIPELINE/devops-06.png)
 
