@@ -113,3 +113,4 @@ Feito isso a conexão com uma fonte de dados a partir do Private Access Channel 
 ![oac-10](https://objectstorage.sa-saopaulo-1.oraclecloud.com/p/mO3zrzrXRdXAEDG9iNQdV6i1If5B0Al3i4caL42JdStbsoOSRIA0WDll7h5z3e70/n/gr8gkzaf8nit/b/bucket-euoraf4-site/o/OAC-PAC/oac-10.png)
 
 Dessa forma o Private Access Channel (PAC) está habilitado em uma instância do Analytics Cloud.
+
