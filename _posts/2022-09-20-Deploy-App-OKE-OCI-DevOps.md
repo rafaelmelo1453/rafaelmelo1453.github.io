@@ -78,3 +78,29 @@ Ainda no terminal faça o pull da última versão de uma imagem hello-world do D
 ```javascript
 $ docker pull karthequian/helloworld:latest
 ```
+
+![devops-07](https://objectstorage.sa-saopaulo-1.oraclecloud.com/p/VBDyGiRs1ur5DMLj9Ic5oSsJusz8ViCPmDc1WaAa0ynwBnSzzAEkwOG3Hh-KiJrA/n/gr8gkzaf8nit/b/bucket-euoraf4-site/o/POST-DEVOPS-PIPELINE/devops-07.png)
+
+Adicione uma tag à imagem do helloworld antes de envia-la para o OCIR (Oracle Cloud Infrastructure Registry).
+
+```javascript
+$ docker tag karthequian/helloworld:latest <region-key>.ocir.io/tenancy-namespace/helloworld:latest
+```
+
+Agora verifique se ambas as imagens estão disponíveis usando o comando abaixo.
+
+```javascript
+$ docker images
+```
+
+![devops-08](https://objectstorage.sa-saopaulo-1.oraclecloud.com/p/VBDyGiRs1ur5DMLj9Ic5oSsJusz8ViCPmDc1WaAa0ynwBnSzzAEkwOG3Hh-KiJrA/n/gr8gkzaf8nit/b/bucket-euoraf4-site/o/POST-DEVOPS-PIPELINE/devops-08.png)
+
+Faça o push imagem para o OCIR (Oracle Cloud Infrastructure Registry) utilizando o seguinte comando:
+
+```javascript
+$ docker push <region-key>.ocir.io/<tenancy-namespace>/helloworld:latest
+```
+
+![devops-09](https://objectstorage.sa-saopaulo-1.oraclecloud.com/p/VBDyGiRs1ur5DMLj9Ic5oSsJusz8ViCPmDc1WaAa0ynwBnSzzAEkwOG3Hh-KiJrA/n/gr8gkzaf8nit/b/bucket-euoraf4-site/o/POST-DEVOPS-PIPELINE/devops-09.png)
+
+Verifique se a imagem consta no Oracle Cloud Infrastructure Registry
