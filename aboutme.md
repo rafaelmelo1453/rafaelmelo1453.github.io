@@ -4,11 +4,10 @@ title: Sobre Mim
 subtitle: O que será que você está procurando aqui?
 ---
 
-Meu nome é Rafael Melo. Engenheiro de Computação, Pós-graduando em Gestão de Projetos pela USP. Possuo as seguintes technical skills:
+Meu nome é Rafael Melo. Engenheiro de Computação, Especialista em Gestão de Projetos pela USP. Possuo as seguintes technical skills:
 
 - Oracle Cloud
 - Azure Cloud
-- Windows Server
 - DevOps
 - ITIL® 4
 
