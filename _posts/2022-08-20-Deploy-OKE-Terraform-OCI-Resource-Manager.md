@@ -10,30 +10,22 @@ comments: true
 
 OCI DevOps é um serviço Oracle Cloud Native para Integração e Entrega Contínua (CI/CD), neste tutorial usaremos para criar uma pipeline para implantar uma aplicação num cluster OKE. 
 
+Antes de iniciar os trabalhos com OCI DevOps será necessário realizar Push da imagem para o OCIR (Oracle Cloud Infrastructure Registry).
 
 ## Push uma Imagem para o OCIR (Oracle Cloud Infrastructure Registry).
 
-Antes de iniciar os trabalhos com OCI DevOps será necessário realizar Pull da imagem para o OCIR (Oracle Cloud Infrastructure Registry).
 
-Navegue até **Analytics Cloud** clique na Analytics Instance que deseja configurar o Private Access Channel. 
+
+Na Console de OCI navegue até **Profile** e clique em **User Sttings**. 
 
 ![oac-01](https://objectstorage.sa-saopaulo-1.oraclecloud.com/p/SbYQCekItBp_5ngn6uEP6ozz6ZCSPKGLrMyUqgVI_FAaa2Z5ATolu3uAEmTkJ-Dj/n/gr8gkzaf8nit/b/bucket-euoraf4-site/o/OAC-PAC/oac-1.png)
 
-Vá até **Private Access Channel.**
+Vá até **Auth Tokens** e **Generate Token**
 
 ![oac-02](https://objectstorage.sa-saopaulo-1.oraclecloud.com/p/T2oHyfbS6q0gCveXiCBtM-yQDXg0q0ExSyxNXdMAOOwKWkldT0N0EnY_V4fGWzQD/n/gr8gkzaf8nit/b/bucket-euoraf4-site/o/OAC-PAC/oac-2.png)
 
-Clique em **Configure Private Access Channel.**
-
-![oac-03](https://objectstorage.sa-saopaulo-1.oraclecloud.com/p/J0lky6nm4t23ZLL6yNu-efCEZRZbbj5_fIl2SthcMBVrBEYKbLe3EYCD6tQrrVjW/n/gr8gkzaf8nit/b/bucket-euoraf4-site/o/OAC-PAC/oac-3.png)
-
-Insira os dados para conexão com a fonte de dados e clique em **Configure.**
-
-- Nome
-- Selecione o compartment da VCN e subnet.
-- Selecione a VCN
-- Selecione a subnet
-- Add DNS Zone que deseja conectar ao Analytics Cloud, por exemplo adb.sa-saopaulo-1.oraclecloud.com para autonomous na região de São Paulo.
+- Insira uma descrição e novamente clique em **Generate Token.**
+- Copie o auth token imediatamente para um notepad, pois não é possível recuperá-lo após fechar.
 
 ![oac-04](https://objectstorage.sa-saopaulo-1.oraclecloud.com/p/zcjayskMSkCdIGyBwFx3w0T7HIFAAQOYJ4xkunGXVZ1FJpcEmoDVUNFpru1_q-8d/n/gr8gkzaf8nit/b/bucket-euoraf4-site/o/OAC-PAC/oac-4.png)
 
