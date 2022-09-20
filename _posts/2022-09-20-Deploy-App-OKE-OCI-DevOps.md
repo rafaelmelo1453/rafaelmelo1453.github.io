@@ -64,7 +64,7 @@ Com isso temos todos as informações para os próximos passos.
 Abra uma janela do terminal num desktop com Docker instalado, faça login no Oracle Cloud Infrastructure Registry usando o seguinte comando:
 
 ```javascript
-# docker login <region-key>.ocir.io
+$ docker login <region-key>.ocir.io
 ```
 
 Insira o username com o seguinte formato \<tenancy-namespace\>/oracleidentitycloudservice/\<username\> para usuários federados ou \<tenancy-namespace\>/\<username\> para **usuários não federados.**
@@ -73,3 +73,8 @@ Então insira o Auth Token copiado anteriomente no lugar da senha.
   
 ![devops-06](https://objectstorage.sa-saopaulo-1.oraclecloud.com/p/VBDyGiRs1ur5DMLj9Ic5oSsJusz8ViCPmDc1WaAa0ynwBnSzzAEkwOG3Hh-KiJrA/n/gr8gkzaf8nit/b/bucket-euoraf4-site/o/POST-DEVOPS-PIPELINE/devops-06.png)
 
+Ainda no terminal faça o pull da última versão de uma imagem hello-world do DockerHub executando o comando abaixo.
+
+```javascript
+$ docker pull karthequian/helloworld:latest
+```
