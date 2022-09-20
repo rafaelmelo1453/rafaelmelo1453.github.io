@@ -67,7 +67,7 @@ Abra uma janela do terminal num desktop com Docker instalado, faça login no Ora
 # docker login <region-key>.ocir.io
 ```
 
-Insira o username com o seguinte formato \<tenancy-namespace\>/oracleidentitycloudservice/\<username\> para usuários federados ou <tenancy-namespace>/<username> para **usuários não federados**.
+Insira o username com o seguinte formato \<tenancy-namespace\>/oracleidentitycloudservice/\<username\> para usuários federados ou \<tenancy-namespace\>/\<username\> para **usuários não federados.**
   
 Então insira o Auth Token copiado anteriomente no lugar da senha.
   
