@@ -163,8 +163,7 @@ apiVersion: v1
 kind: Service
 metadata:
   name: helloworld-service
-annotations:
-    oci.oraclecloud.com/load-balancer-type: "lb"
+  annotations:
     service.beta.kubernetes.io/oci-load-balancer-shape: "flexible"
     service.beta.kubernetes.io/oci-load-balancer-shape-flex-min: "10"
     service.beta.kubernetes.io/oci-load-balancer-shape-flex-max: "10"
