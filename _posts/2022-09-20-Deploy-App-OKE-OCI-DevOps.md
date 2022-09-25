@@ -258,6 +258,8 @@ Selecione a opção **OKE: Default** e clique em Next.
 
 Clique em **Add.**
 
+![devops-23](https://objectstorage.sa-saopaulo-1.oraclecloud.com/p/VBDyGiRs1ur5DMLj9Ic5oSsJusz8ViCPmDc1WaAa0ynwBnSzzAEkwOG3Hh-KiJrA/n/gr8gkzaf8nit/b/bucket-euoraf4-site/o/POST-DEVOPS-PIPELINE/devops-23.png)
+
 Verifique se deployment foi realizado com sucesso no cluster.
 
 ```javascript
