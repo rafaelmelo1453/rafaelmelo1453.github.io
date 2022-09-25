@@ -162,8 +162,12 @@ Clique em **Create DevOps Project**.
 
 ![devops-16](https://objectstorage.sa-saopaulo-1.oraclecloud.com/p/VBDyGiRs1ur5DMLj9Ic5oSsJusz8ViCPmDc1WaAa0ynwBnSzzAEkwOG3Hh-KiJrA/n/gr8gkzaf8nit/b/bucket-euoraf4-site/o/POST-DEVOPS-PIPELINE/devops-16.png)
 
+Clique em **Artifact** e então em **Add Artifact**.
 
-
+- Nome: helloworld-artifact.
+- Type: General Artifact.
+- Artifact source: Inline
+- Value: Cole o manifest abaixo alterando os campos **region-key**, **tenancy-namespace**, **repo-name**, **tag** e **secret-nama**.
 
 Editando Manifest File para deploy.
 
@@ -207,6 +211,47 @@ spec:
   selector:
     app: helloworld
 ```
+
+![devops-17](https://objectstorage.sa-saopaulo-1.oraclecloud.com/p/VBDyGiRs1ur5DMLj9Ic5oSsJusz8ViCPmDc1WaAa0ynwBnSzzAEkwOG3Hh-KiJrA/n/gr8gkzaf8nit/b/bucket-euoraf4-site/o/POST-DEVOPS-PIPELINE/devops-17.png)
+
+Em **Environments** clique em **Create environment.**
+
+![devops-20](https://objectstorage.sa-saopaulo-1.oraclecloud.com/p/VBDyGiRs1ur5DMLj9Ic5oSsJusz8ViCPmDc1WaAa0ynwBnSzzAEkwOG3Hh-KiJrA/n/gr8gkzaf8nit/b/bucket-euoraf4-site/o/POST-DEVOPS-PIPELINE/devops-20.png)
+
+Selecione 
+
+- Environment type: Oracle Kubernetes Engine
+- Name: oke-env
+
+Clique em Next.
+
+![devops-21](https://objectstorage.sa-saopaulo-1.oraclecloud.com/p/VBDyGiRs1ur5DMLj9Ic5oSsJusz8ViCPmDc1WaAa0ynwBnSzzAEkwOG3Hh-KiJrA/n/gr8gkzaf8nit/b/bucket-euoraf4-site/o/POST-DEVOPS-PIPELINE/devops-21.png)
+
+Selecione 
+
+- Region
+- Compartment
+- Cluster: Selecione seu Cluster OKE
+- VCN do Cluster OKE
+- Subnet do Cluster OKE
+
+Clique em **Create Enviroment.**
+
+![devops-22](https://objectstorage.sa-saopaulo-1.oraclecloud.com/p/VBDyGiRs1ur5DMLj9Ic5oSsJusz8ViCPmDc1WaAa0ynwBnSzzAEkwOG3Hh-KiJrA/n/gr8gkzaf8nit/b/bucket-euoraf4-site/o/POST-DEVOPS-PIPELINE/devops-22.png)
+
+Em Deployment Pipeline
+
+Clique em **Create Pipeline.**
+
+- Pipeline type: **Create a deployment pipeline**.
+
+![devops-18](https://objectstorage.sa-saopaulo-1.oraclecloud.com/p/VBDyGiRs1ur5DMLj9Ic5oSsJusz8ViCPmDc1WaAa0ynwBnSzzAEkwOG3Hh-KiJrA/n/gr8gkzaf8nit/b/bucket-euoraf4-site/o/POST-DEVOPS-PIPELINE/devops-18.png)
+
+Adicione um estágio ao pipeline, clique no ícone + e selecione **Add Stage**.
+
+Selecione a opção **OKE: Default** e clique em Next.
+
+![devops-19](https://objectstorage.sa-saopaulo-1.oraclecloud.com/p/VBDyGiRs1ur5DMLj9Ic5oSsJusz8ViCPmDc1WaAa0ynwBnSzzAEkwOG3Hh-KiJrA/n/gr8gkzaf8nit/b/bucket-euoraf4-site/o/POST-DEVOPS-PIPELINE/devops-19.png)
 
 Verifique se deployment foi realizado com sucesso no cluster.
 
