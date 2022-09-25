@@ -165,7 +165,7 @@ Clique em **Create DevOps Project**.
 Clique em **Artifact** e então em **Add Artifact**.
 
 - Nome: helloworld-artifact.
-- Type: General Artifact.
+- Type: Kubernetes Manifest.
 - Artifact source: Inline
 - Value: Cole o manifest abaixo alterando os campos **region-key**, **tenancy-namespace**, **repo-name**, **tag** e **secret-nama**.
 
@@ -252,6 +252,11 @@ Adicione um estágio ao pipeline, clique no ícone + e selecione **Add Stage**.
 Selecione a opção **OKE: Default** e clique em Next.
 
 ![devops-19](https://objectstorage.sa-saopaulo-1.oraclecloud.com/p/VBDyGiRs1ur5DMLj9Ic5oSsJusz8ViCPmDc1WaAa0ynwBnSzzAEkwOG3Hh-KiJrA/n/gr8gkzaf8nit/b/bucket-euoraf4-site/o/POST-DEVOPS-PIPELINE/devops-19.png)
+
+- Stage Name: helloworld-deploy
+- Environment criaod anteriomente
+
+Clique em **Add.**
 
 Verifique se deployment foi realizado com sucesso no cluster.
 
