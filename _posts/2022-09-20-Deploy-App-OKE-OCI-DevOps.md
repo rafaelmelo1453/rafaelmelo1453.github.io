@@ -175,6 +175,8 @@ Clique em **Logs** e então habilite o DevOps **Logs**.
 
 ### Artifact
 
+Artifact é o Kubernetes Manifest que será usado para realizar o deployment no OKE e substituirá o arquivo .yaml que seria utilizado num deployment manual. 
+
 Clique em **Artifact** e então em **Add Artifact**.
 
 - Nome: helloworld-artifact.
@@ -227,20 +229,17 @@ spec:
 
 ### Environments
 
+Criando um Environment é possível setar o cluster OKE onde será realizado o deployment do HelloWorld App.  
+
 Em **Environments** clique em **Create environment.**
 
 ![devops-20](https://objectstorage.sa-saopaulo-1.oraclecloud.com/p/VBDyGiRs1ur5DMLj9Ic5oSsJusz8ViCPmDc1WaAa0ynwBnSzzAEkwOG3Hh-KiJrA/n/gr8gkzaf8nit/b/bucket-euoraf4-site/o/POST-DEVOPS-PIPELINE/devops-20.png)
 
-Selecione 
-
-- Environment type: Oracle Kubernetes Engine
-- Name: oke-env
-
-Clique em Next.
+Em **Environment type** selecione a opção **Oracle Kubernetes Engine**, adicione o nome **oke-env** e clique em **Next**.
 
 ![devops-21](https://objectstorage.sa-saopaulo-1.oraclecloud.com/p/VBDyGiRs1ur5DMLj9Ic5oSsJusz8ViCPmDc1WaAa0ynwBnSzzAEkwOG3Hh-KiJrA/n/gr8gkzaf8nit/b/bucket-euoraf4-site/o/POST-DEVOPS-PIPELINE/devops-21.png)
 
-Selecione 
+Então selecione o Cluster OKE onde será realizado o deployment. 
 
 - Region
 - Compartment
@@ -252,28 +251,28 @@ Clique em **Create Enviroment.**
 
 ![devops-22](https://objectstorage.sa-saopaulo-1.oraclecloud.com/p/VBDyGiRs1ur5DMLj9Ic5oSsJusz8ViCPmDc1WaAa0ynwBnSzzAEkwOG3Hh-KiJrA/n/gr8gkzaf8nit/b/bucket-euoraf4-site/o/POST-DEVOPS-PIPELINE/devops-22.png)
 
-Em Deployment Pipeline
+### Criando Deployment Pipeline
 
-Clique em **Create Pipeline.**
-
-- Pipeline type: **Create a deployment pipeline**.
+Clique em **Create Pipeline** e então escolha a opção **Create a deployment pipeline** em Pipeline type.
 
 ![devops-18](https://objectstorage.sa-saopaulo-1.oraclecloud.com/p/VBDyGiRs1ur5DMLj9Ic5oSsJusz8ViCPmDc1WaAa0ynwBnSzzAEkwOG3Hh-KiJrA/n/gr8gkzaf8nit/b/bucket-euoraf4-site/o/POST-DEVOPS-PIPELINE/devops-18.png)
 
-Adicione um estágio ao pipeline, clique no ícone + e selecione **Add Stage**.
-
-Selecione a opção **OKE: Default** e clique em Next.
+Adicione um estágio ao pipeline, clique no ícone + e selecione **Add Stage**, então selecione a opção **OKE: Default** e clique em Next.
 
 ![devops-19](https://objectstorage.sa-saopaulo-1.oraclecloud.com/p/VBDyGiRs1ur5DMLj9Ic5oSsJusz8ViCPmDc1WaAa0ynwBnSzzAEkwOG3Hh-KiJrA/n/gr8gkzaf8nit/b/bucket-euoraf4-site/o/POST-DEVOPS-PIPELINE/devops-19.png)
 
-- Stage Name: helloworld-deploy
-- Environment criaod anteriomente
+Na tela seguinte configure o pipeline deployment com as seguintes informações.
+
+- Stage Name: helloworld-deploy.
+- Environment: **oke-env** criado anteriomente.
 
 Clique em **Add.**
 
 ![devops-23](https://objectstorage.sa-saopaulo-1.oraclecloud.com/p/VBDyGiRs1ur5DMLj9Ic5oSsJusz8ViCPmDc1WaAa0ynwBnSzzAEkwOG3Hh-KiJrA/n/gr8gkzaf8nit/b/bucket-euoraf4-site/o/POST-DEVOPS-PIPELINE/devops-23.png)
 
-Clique em **Run Pipeline.**
+### Executando Deployment Pipeline
+
+Clique em **Run Pipeline**
 
 ![devops-24](https://objectstorage.sa-saopaulo-1.oraclecloud.com/p/VBDyGiRs1ur5DMLj9Ic5oSsJusz8ViCPmDc1WaAa0ynwBnSzzAEkwOG3Hh-KiJrA/n/gr8gkzaf8nit/b/bucket-euoraf4-site/o/POST-DEVOPS-PIPELINE/devops-24.png)
 
@@ -281,11 +280,11 @@ Então clique em **Start Manual Run**.
 
 ![devops-28](https://objectstorage.sa-saopaulo-1.oraclecloud.com/p/VBDyGiRs1ur5DMLj9Ic5oSsJusz8ViCPmDc1WaAa0ynwBnSzzAEkwOG3Hh-KiJrA/n/gr8gkzaf8nit/b/bucket-euoraf4-site/o/POST-DEVOPS-PIPELINE/devops-28.png)
 
-Acompanhe o deployment do App helloworld no terminal.
+Acompanhe o deployment do App helloworld via logs no terminal que será aberto.
 
 ![devops-29](https://objectstorage.sa-saopaulo-1.oraclecloud.com/p/VBDyGiRs1ur5DMLj9Ic5oSsJusz8ViCPmDc1WaAa0ynwBnSzzAEkwOG3Hh-KiJrA/n/gr8gkzaf8nit/b/bucket-euoraf4-site/o/POST-DEVOPS-PIPELINE/devops-29.png)
 
-Verifique se deployment foi realizado com sucesso no cluster.
+Após finalização do deployment realize um double check do deployment, dessa vez direto no Cluster OKE via kubectl.
 
 ```javascript
 $ kubectl get deployments
@@ -293,7 +292,9 @@ $ kubectl get deployments
 
 ![devops-25](https://objectstorage.sa-saopaulo-1.oraclecloud.com/p/VBDyGiRs1ur5DMLj9Ic5oSsJusz8ViCPmDc1WaAa0ynwBnSzzAEkwOG3Hh-KiJrA/n/gr8gkzaf8nit/b/bucket-euoraf4-site/o/POST-DEVOPS-PIPELINE/devops-25.png)
 
-Verifique os services para obter o IP do LoadBalancer para o helloworld-service.
+### Acesse o site HelloWorld
+
+Com deployment realizado com sucesso verifique os services via kubectl para obter o IP do LoadBalancer que foi criado para o App helloworld-service.
 
 ```javascript
 $ kubectl get services
@@ -301,11 +302,11 @@ $ kubectl get services
 
 ![devops-26](https://objectstorage.sa-saopaulo-1.oraclecloud.com/p/VBDyGiRs1ur5DMLj9Ic5oSsJusz8ViCPmDc1WaAa0ynwBnSzzAEkwOG3Hh-KiJrA/n/gr8gkzaf8nit/b/bucket-euoraf4-site/o/POST-DEVOPS-PIPELINE/devops-26.png)
 
-Acesse o site helloworld com o IP do loadbalancer.
+No navegador acesse o App HelloWorld com o IP do loadbalancer, obtido no passo anterior.
 
 ![devops-31](https://objectstorage.sa-saopaulo-1.oraclecloud.com/p/VBDyGiRs1ur5DMLj9Ic5oSsJusz8ViCPmDc1WaAa0ynwBnSzzAEkwOG3Hh-KiJrA/n/gr8gkzaf8nit/b/bucket-euoraf4-site/o/POST-DEVOPS-PIPELINE/devops-31.png)
 
-Verifique que o Container ID no site confere com o nome do POD no cluster OKE.
+Note que o Container ID no site HelloWorl confere com o nome do POD no cluster OKE.
 
 ```javascript
 $ kubectl get pods
@@ -313,11 +314,21 @@ $ kubectl get pods
 
 ![devops-27](https://objectstorage.sa-saopaulo-1.oraclecloud.com/p/VBDyGiRs1ur5DMLj9Ic5oSsJusz8ViCPmDc1WaAa0ynwBnSzzAEkwOG3Hh-KiJrA/n/gr8gkzaf8nit/b/bucket-euoraf4-site/o/POST-DEVOPS-PIPELINE/devops-27.png)
 
-Limpeza
+## Housekeeping/Limpeza (Opcional)
+
+#### Deployment
+
+Delete o deployment via kubectl.
 
 ```javascript
 $ kubectl delete deployment helloworld-deployment
 ```
+
+![devops-32](https://objectstorage.sa-saopaulo-1.oraclecloud.com/p/VBDyGiRs1ur5DMLj9Ic5oSsJusz8ViCPmDc1WaAa0ynwBnSzzAEkwOG3Hh-KiJrA/n/gr8gkzaf8nit/b/bucket-euoraf4-site/o/POST-DEVOPS-PIPELINE/devops-32.png)
+
+#### Load Balancer
+
+Delete o Load Balancer via kubectl.
 
 ```javascript
 $ kubectl delete service helloworld-service
@@ -325,5 +336,12 @@ $ kubectl delete service helloworld-service
 
 ![devops-32](https://objectstorage.sa-saopaulo-1.oraclecloud.com/p/VBDyGiRs1ur5DMLj9Ic5oSsJusz8ViCPmDc1WaAa0ynwBnSzzAEkwOG3Hh-KiJrA/n/gr8gkzaf8nit/b/bucket-euoraf4-site/o/POST-DEVOPS-PIPELINE/devops-32.png)
 
+#### (OCIR) Oracle Cloud Infrastructure Registry
 
+Na Console de OCI navegue até **Developer Services** e clique em **Container Registry**.
 
+Escolha o compartment onde o Registry foi criado.
+
+Clique em **Actions** ao lado do nome do repositório e selecione **Delete Repository**, na tela seguinte confirme.
+
+![devops-33](https://objectstorage.sa-saopaulo-1.oraclecloud.com/p/VBDyGiRs1ur5DMLj9Ic5oSsJusz8ViCPmDc1WaAa0ynwBnSzzAEkwOG3Hh-KiJrA/n/gr8gkzaf8nit/b/bucket-euoraf4-site/o/POST-DEVOPS-PIPELINE/devops-33.png)
