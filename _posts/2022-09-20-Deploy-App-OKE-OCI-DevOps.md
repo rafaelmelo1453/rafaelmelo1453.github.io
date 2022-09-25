@@ -20,9 +20,9 @@ Na Console de OCI navegue até **Developer Services** e clique em **Container Re
 
 Clique em **Create Repository.**
 
-- Escolha o compartment.
-- Insira um nome para o repositório (neste exemplo, helloworld).
-- Selecione a opção **Private.**
+* Escolha o compartment.
+* Insira um nome para o repositório (neste exemplo, helloworld).
+* Selecione a opção **Private.**
 
 Então clique em **Create Repository** para finalizar.
 
