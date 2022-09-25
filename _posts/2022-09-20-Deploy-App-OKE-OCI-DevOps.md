@@ -63,7 +63,7 @@ Com isso temos todos as informações para os próximos passos.
 
 Abra uma janela do terminal num desktop com Docker instalado, faça login no Oracle Cloud Infrastructure Registry usando o seguinte comando:
 
-```javascript
+```
 $ docker login <region-key>.ocir.io
 ```
 
