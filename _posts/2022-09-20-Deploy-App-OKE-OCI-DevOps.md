@@ -132,6 +132,39 @@ $ kubectl get secrets
 
 ![devops-12](https://objectstorage.sa-saopaulo-1.oraclecloud.com/p/VBDyGiRs1ur5DMLj9Ic5oSsJusz8ViCPmDc1WaAa0ynwBnSzzAEkwOG3Hh-KiJrA/n/gr8gkzaf8nit/b/bucket-euoraf4-site/o/POST-DEVOPS-PIPELINE/devops-12.png)
 
+Para criar um tópico:
+
+Na console clique em **Developer Services**. Em **Application Intergration**, clique em **Notifications**.
+
+![devops-13](https://objectstorage.sa-saopaulo-1.oraclecloud.com/p/VBDyGiRs1ur5DMLj9Ic5oSsJusz8ViCPmDc1WaAa0ynwBnSzzAEkwOG3Hh-KiJrA/n/gr8gkzaf8nit/b/bucket-euoraf4-site/o/POST-DEVOPS-PIPELINE/devops-13.png)
+
+Na página **Topics**, clique em **Create Topic**.
+
+- Nome do topico: **hello-world-topic**.
+
+Clique em **Create**.
+
+![devops-15](https://objectstorage.sa-saopaulo-1.oraclecloud.com/p/VBDyGiRs1ur5DMLj9Ic5oSsJusz8ViCPmDc1WaAa0ynwBnSzzAEkwOG3Hh-KiJrA/n/gr8gkzaf8nit/b/bucket-euoraf4-site/o/POST-DEVOPS-PIPELINE/devops-15.png)
+
+
+
+
+Na Console, navegue até **Developer Services**, em **DevOps** clique em **Projects**.
+
+![devops-14](https://objectstorage.sa-saopaulo-1.oraclecloud.com/p/VBDyGiRs1ur5DMLj9Ic5oSsJusz8ViCPmDc1WaAa0ynwBnSzzAEkwOG3Hh-KiJrA/n/gr8gkzaf8nit/b/bucket-euoraf4-site/o/POST-DEVOPS-PIPELINE/devops-14.png)
+
+Na página **DevOps Projects**, clique em **Create DevOps Project**.
+
+- Nome do Projeto: **helloworld**.
+- Selecione o hello-world-topic criado anteriomente.
+
+Clique em **Create DevOps Project**.
+
+![devops-16](https://objectstorage.sa-saopaulo-1.oraclecloud.com/p/VBDyGiRs1ur5DMLj9Ic5oSsJusz8ViCPmDc1WaAa0ynwBnSzzAEkwOG3Hh-KiJrA/n/gr8gkzaf8nit/b/bucket-euoraf4-site/o/POST-DEVOPS-PIPELINE/devops-16.png)
+
+
+
+
 Editando Manifest File para deploy.
 
 ```javascript
