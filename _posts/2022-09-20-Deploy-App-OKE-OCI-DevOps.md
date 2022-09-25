@@ -10,7 +10,7 @@ comments: true
 
 OCI DevOps é um serviço Oracle Cloud Native para Integração e Entrega Contínua (CI/CD), neste tutorial usaremos para criar uma pipeline para implantar uma aplicação num cluster OKE. 
 
-## Criando um Repository para armazenar Imagens.
+## 1. Criando um Repository para armazenar Imagens.
 
 Na Console de OCI navegue até **Developer Services** e clique em **Container Registry**. 
 
