@@ -167,6 +167,8 @@ Clique em **Create DevOps Project**.
 
 ####OCI DevOps Logs
 
+Ative o OCI DevOps Logs para que seja possível acompanhar os logs passa a passo durante o deployment.
+
 Clique em **Logs** e então habilite o DevOps **Logs**.
 
 ![devops-30](https://objectstorage.sa-saopaulo-1.oraclecloud.com/p/VBDyGiRs1ur5DMLj9Ic5oSsJusz8ViCPmDc1WaAa0ynwBnSzzAEkwOG3Hh-KiJrA/n/gr8gkzaf8nit/b/bucket-euoraf4-site/o/POST-DEVOPS-PIPELINE/devops-30.png)
@@ -176,9 +178,7 @@ Clique em **Artifact** e então em **Add Artifact**.
 - Nome: helloworld-artifact.
 - Type: Kubernetes Manifest.
 - Artifact source: Inline
-- Value: Cole o manifest abaixo alterando os campos **region-key**, **tenancy-namespace**, **repo-name**, **tag** e **secret-nama**.
-
-Editando Manifest File para deploy.
+- Value: Cole o manifest abaixo alterando os campos **region-key**, **tenancy-namespace**, **repo-name**, **tag** e **secret-name** de acordo com as informações do seu ambiente.
 
 ```javascript
 apiVersion: apps/v1
@@ -222,6 +222,8 @@ spec:
 ```
 
 ![devops-17](https://objectstorage.sa-saopaulo-1.oraclecloud.com/p/VBDyGiRs1ur5DMLj9Ic5oSsJusz8ViCPmDc1WaAa0ynwBnSzzAEkwOG3Hh-KiJrA/n/gr8gkzaf8nit/b/bucket-euoraf4-site/o/POST-DEVOPS-PIPELINE/devops-17.png)
+
+####Environments
 
 Em **Environments** clique em **Create environment.**
 
