@@ -10,6 +10,15 @@ comments: true
 
 OCI DevOps é um serviço Oracle Cloud Native para Integração e Entrega Contínua (CI/CD), neste tutorial usaremos para criar um pipeline e implantar uma aplicação simple de Hello World num cluster OKE com Load Balancer. 
 
+## O que será criado?
+
+| Criar um repositório no OCIR |
+| Push do HelloWorld Image do DockerHub |
+| Pull do HelloWorld Imagepara OCIR |
+| Criar Secret no OKE |
+| Criar Pipeline Deployment |
+| Deploy e Acesso ao HelloWorld |
+
 ## Crie um (OCIR) Oracle Cloud Infrastructure Registry para armazenar imagens.
 
 Na Console de OCI navegue até **Developer Services** e clique em **Container Registry**. 
