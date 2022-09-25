@@ -31,7 +31,7 @@ Então clique em **Create Repository** para finalizar.
 - Insira uma descrição e novamente clique em **Generate Token.**
 - Copie o auth token imediatamente para um notepad, pois não é possível recuperá-lo após fechar.
 
-## Push uma Imagem para o OCIR (Oracle Cloud Infrastructure Registry).
+## Enviando HelloWorld Image para o OCIR (Oracle Cloud Infrastructure Registry).
 
 Para fazer o push da imagem docker para o OCIR voçe vai precisar das seguintes informações sobre o tenancy OCI:
 
@@ -134,7 +134,9 @@ $ kubectl get secrets
 
 ## Criando Pipeline Deployment com OCI DevOps.
 
-Para criar um tópico:
+####Topic Notifications
+
+Topic Notifications pode ser utilizado para enviar notificações sobre os eventos que ocorrem no OCI DevOps, Topic Notifications é um requisito para criar um novo projeto no OCI DevOps.
 
 Na console clique em **Developer Services**. Em **Application Intergration**, clique em **Notifications**.
 
@@ -148,8 +150,7 @@ Clique em **Create**.
 
 ![devops-15](https://objectstorage.sa-saopaulo-1.oraclecloud.com/p/VBDyGiRs1ur5DMLj9Ic5oSsJusz8ViCPmDc1WaAa0ynwBnSzzAEkwOG3Hh-KiJrA/n/gr8gkzaf8nit/b/bucket-euoraf4-site/o/POST-DEVOPS-PIPELINE/devops-15.png)
 
-
-
+####OCI DevOps Project
 
 Na Console, navegue até **Developer Services**, em **DevOps** clique em **Projects**.
 
@@ -164,7 +165,7 @@ Clique em **Create DevOps Project**.
 
 ![devops-16](https://objectstorage.sa-saopaulo-1.oraclecloud.com/p/VBDyGiRs1ur5DMLj9Ic5oSsJusz8ViCPmDc1WaAa0ynwBnSzzAEkwOG3Hh-KiJrA/n/gr8gkzaf8nit/b/bucket-euoraf4-site/o/POST-DEVOPS-PIPELINE/devops-16.png)
 
-Habilite os Logs
+####OCI DevOps Logs
 
 Clique em **Logs** e então habilite o DevOps **Logs**.
 
