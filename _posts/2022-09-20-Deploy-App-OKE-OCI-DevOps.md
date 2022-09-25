@@ -134,7 +134,7 @@ $ kubectl get secrets
 
 ## Criando Pipeline Deployment com OCI DevOps.
 
-####Topic Notifications
+#### Topic Notifications
 
 Topic Notifications pode ser utilizado para enviar notificações sobre os eventos que ocorrem no OCI DevOps, Topic Notifications é um requisito para criar um novo projeto no OCI DevOps.
 
@@ -150,7 +150,7 @@ Clique em **Create**.
 
 ![devops-15](https://objectstorage.sa-saopaulo-1.oraclecloud.com/p/VBDyGiRs1ur5DMLj9Ic5oSsJusz8ViCPmDc1WaAa0ynwBnSzzAEkwOG3Hh-KiJrA/n/gr8gkzaf8nit/b/bucket-euoraf4-site/o/POST-DEVOPS-PIPELINE/devops-15.png)
 
-####OCI DevOps Project
+#### OCI DevOps Project
 
 Na Console, navegue até **Developer Services**, em **DevOps** clique em **Projects**.
 
@@ -165,7 +165,7 @@ Clique em **Create DevOps Project**.
 
 ![devops-16](https://objectstorage.sa-saopaulo-1.oraclecloud.com/p/VBDyGiRs1ur5DMLj9Ic5oSsJusz8ViCPmDc1WaAa0ynwBnSzzAEkwOG3Hh-KiJrA/n/gr8gkzaf8nit/b/bucket-euoraf4-site/o/POST-DEVOPS-PIPELINE/devops-16.png)
 
-####OCI DevOps Logs
+#### OCI DevOps Logs
 
 Ative o OCI DevOps Logs para que seja possível acompanhar os logs passa a passo durante o deployment.
 
@@ -223,7 +223,7 @@ spec:
 
 ![devops-17](https://objectstorage.sa-saopaulo-1.oraclecloud.com/p/VBDyGiRs1ur5DMLj9Ic5oSsJusz8ViCPmDc1WaAa0ynwBnSzzAEkwOG3Hh-KiJrA/n/gr8gkzaf8nit/b/bucket-euoraf4-site/o/POST-DEVOPS-PIPELINE/devops-17.png)
 
-####Environments
+#### Environments
 
 Em **Environments** clique em **Create environment.**
 
