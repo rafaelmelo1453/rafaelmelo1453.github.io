@@ -10,7 +10,7 @@ comments: true
 
 OCI DevOps é um serviço Oracle Cloud Native para Integração e Entrega Contínua (CI/CD), neste tutorial usaremos para criar uma pipeline para implantar uma aplicação num cluster OKE. 
 
-## Criando um (OCIR) Oracle Cloud Infrastructure Registry para armazenar imagens.
+## Crie um (OCIR) Oracle Cloud Infrastructure Registry para armazenar imagens.
 
 Na Console de OCI navegue até **Developer Services** e clique em **Container Registry**. 
 
@@ -107,9 +107,9 @@ Verifique se a imagem consta no Oracle Cloud Infrastructure Registry
 
 ![devops-10](https://objectstorage.sa-saopaulo-1.oraclecloud.com/p/VBDyGiRs1ur5DMLj9Ic5oSsJusz8ViCPmDc1WaAa0ynwBnSzzAEkwOG3Hh-KiJrA/n/gr8gkzaf8nit/b/bucket-euoraf4-site/o/POST-DEVOPS-PIPELINE/devops-10.png)
 
-## Deploy APP.
+## Verificando e Preparando OKE para Deployment.
 
-Conecte-se ao seu cluster OKE e teste o kubectl.
+Conecte-se ao seu cluster OKE e verifique que o funcionamento kubectl está operacional.
 
 ```javascript
 $ kubectl get nodes
@@ -117,20 +117,22 @@ $ kubectl get nodes
 
 ![devops-11](https://objectstorage.sa-saopaulo-1.oraclecloud.com/p/VBDyGiRs1ur5DMLj9Ic5oSsJusz8ViCPmDc1WaAa0ynwBnSzzAEkwOG3Hh-KiJrA/n/gr8gkzaf8nit/b/bucket-euoraf4-site/o/POST-DEVOPS-PIPELINE/devops-11.png)
 
-Crie uma secret 
+Gere uma secret que será usada no Kubernetes Manifest durante o deploy.
 
 ```javascript
 $ kubectl create secret docker-registry ocirsecret
 --docker-server=<region-key>.ocir.io --docker-username='<tenancy-namespace>/oracleidentitycloudservice/<username>' --docker-password='<oci-auth-token>' --docker-email='<email-address>'
 ```
 
-Verifique se a secret foi criada corretamente.
+Depois de gerada verifique se a secret foi criada corretamente.
 
 ```javascript
 $ kubectl get secrets
 ```
 
 ![devops-12](https://objectstorage.sa-saopaulo-1.oraclecloud.com/p/VBDyGiRs1ur5DMLj9Ic5oSsJusz8ViCPmDc1WaAa0ynwBnSzzAEkwOG3Hh-KiJrA/n/gr8gkzaf8nit/b/bucket-euoraf4-site/o/POST-DEVOPS-PIPELINE/devops-12.png)
+
+## Criando Pipeline Deployment com OCI DevOps.
 
 Para criar um tópico:
 
