@@ -8,7 +8,7 @@ tags: [Cloud, Oracle, OCI, DevOps, Pipeline, OKE, Cluster, LoadBalancer]
 comments: true
 ---
 
-OCI DevOps é um serviço Oracle Cloud Native para Integração e Entrega Contínua (CI/CD), neste tutorial usaremos para criar uma pipeline para implantar uma aplicação num cluster OKE. 
+OCI DevOps é um serviço Oracle Cloud Native para Integração e Entrega Contínua (CI/CD), neste tutorial usaremos para criar um pipeline e implantar uma aplicação simple de Hello World num cluster OKE com Load Balancer. 
 
 ## Crie um (OCIR) Oracle Cloud Infrastructure Registry para armazenar imagens.
 
