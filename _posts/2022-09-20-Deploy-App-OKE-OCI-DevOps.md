@@ -150,13 +150,11 @@ spec:
         app: helloworld
     spec:
       containers:
-      - name: helloworld
-    # enter the path to your image, be sure to include the correct region prefix    
+      - name: helloworld   
         image: <region-key>.ocir.io/<tenancy-namespace>/<repo-name>:<tag>
         ports:
         - containerPort: 80
-      imagePullSecrets:
-    # enter the name of the secret you created  
+      imagePullSecrets: 
       - name: <secret-name>
 ---
 apiVersion: v1
