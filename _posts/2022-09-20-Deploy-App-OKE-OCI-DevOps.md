@@ -150,7 +150,7 @@ Clique em **Create**.
 
 ![devops-15](https://objectstorage.sa-saopaulo-1.oraclecloud.com/p/VBDyGiRs1ur5DMLj9Ic5oSsJusz8ViCPmDc1WaAa0ynwBnSzzAEkwOG3Hh-KiJrA/n/gr8gkzaf8nit/b/bucket-euoraf4-site/o/POST-DEVOPS-PIPELINE/devops-15.png)
 
-### OCI DevOps Project
+#### OCI DevOps Project
 
 Na Console, navegue até **Developer Services**, em **DevOps** clique em **Projects**.
 
@@ -165,7 +165,7 @@ Clique em **Create DevOps Project**.
 
 ![devops-16](https://objectstorage.sa-saopaulo-1.oraclecloud.com/p/VBDyGiRs1ur5DMLj9Ic5oSsJusz8ViCPmDc1WaAa0ynwBnSzzAEkwOG3Hh-KiJrA/n/gr8gkzaf8nit/b/bucket-euoraf4-site/o/POST-DEVOPS-PIPELINE/devops-16.png)
 
-### OCI DevOps Logs
+#### OCI DevOps Logs
 
 Ative o OCI DevOps Logs para que seja possível acompanhar os logs passa a passo durante o deployment.
 
@@ -173,7 +173,7 @@ Clique em **Logs** e então habilite o DevOps **Logs**.
 
 ![devops-30](https://objectstorage.sa-saopaulo-1.oraclecloud.com/p/VBDyGiRs1ur5DMLj9Ic5oSsJusz8ViCPmDc1WaAa0ynwBnSzzAEkwOG3Hh-KiJrA/n/gr8gkzaf8nit/b/bucket-euoraf4-site/o/POST-DEVOPS-PIPELINE/devops-30.png)
 
-### Artifact
+#### Artifact
 
 Artifact é o Kubernetes Manifest que será usado para realizar o deployment no OKE e substituirá o arquivo .yaml que seria utilizado num deployment manual. 
 
@@ -227,7 +227,7 @@ spec:
 
 ![devops-17](https://objectstorage.sa-saopaulo-1.oraclecloud.com/p/VBDyGiRs1ur5DMLj9Ic5oSsJusz8ViCPmDc1WaAa0ynwBnSzzAEkwOG3Hh-KiJrA/n/gr8gkzaf8nit/b/bucket-euoraf4-site/o/POST-DEVOPS-PIPELINE/devops-17.png)
 
-### Environments
+#### Environments
 
 Criando um Environment é possível setar o cluster OKE onde será realizado o deployment do HelloWorld App.  
 
@@ -251,7 +251,7 @@ Clique em **Create Enviroment.**
 
 ![devops-22](https://objectstorage.sa-saopaulo-1.oraclecloud.com/p/VBDyGiRs1ur5DMLj9Ic5oSsJusz8ViCPmDc1WaAa0ynwBnSzzAEkwOG3Hh-KiJrA/n/gr8gkzaf8nit/b/bucket-euoraf4-site/o/POST-DEVOPS-PIPELINE/devops-22.png)
 
-### Criando Deployment Pipeline
+#### Criando Deployment Pipeline
 
 Clique em **Create Pipeline** e então escolha a opção **Create a deployment pipeline** em Pipeline type.
 
@@ -270,7 +270,7 @@ Clique em **Add.**
 
 ![devops-23](https://objectstorage.sa-saopaulo-1.oraclecloud.com/p/VBDyGiRs1ur5DMLj9Ic5oSsJusz8ViCPmDc1WaAa0ynwBnSzzAEkwOG3Hh-KiJrA/n/gr8gkzaf8nit/b/bucket-euoraf4-site/o/POST-DEVOPS-PIPELINE/devops-23.png)
 
-### Executando Deployment Pipeline
+#### Executando Deployment Pipeline
 
 Clique em **Run Pipeline**
 
@@ -292,7 +292,7 @@ $ kubectl get deployments
 
 ![devops-25](https://objectstorage.sa-saopaulo-1.oraclecloud.com/p/VBDyGiRs1ur5DMLj9Ic5oSsJusz8ViCPmDc1WaAa0ynwBnSzzAEkwOG3Hh-KiJrA/n/gr8gkzaf8nit/b/bucket-euoraf4-site/o/POST-DEVOPS-PIPELINE/devops-25.png)
 
-### Acesse o site HelloWorld
+#### Acesse o site HelloWorld
 
 Com deployment realizado com sucesso verifique os services via kubectl para obter o IP do LoadBalancer que foi criado para o App helloworld-service.
 
