@@ -175,11 +175,15 @@ spec:
     app: helloworld
 ```
 
+Verifique se deployment foi realizado com sucesso no cluster.
+
 ```javascript
 $ kubectl get deployments
 ```
 
 ![devops-25](https://objectstorage.sa-saopaulo-1.oraclecloud.com/p/VBDyGiRs1ur5DMLj9Ic5oSsJusz8ViCPmDc1WaAa0ynwBnSzzAEkwOG3Hh-KiJrA/n/gr8gkzaf8nit/b/bucket-euoraf4-site/o/POST-DEVOPS-PIPELINE/devops-25.png)
+
+Verifique os services para obter o IP do LoadBalancer para o helloworld-service.
 
 ```javascript
 $ kubectl get services
