@@ -10,7 +10,7 @@ comments: true
 
 OCI DevOps é um serviço Oracle Cloud Native para Integração e Entrega Contínua (CI/CD), neste tutorial usaremos para criar uma pipeline para implantar uma aplicação num cluster OKE. 
 
-## 1. Criando um Repository para armazenar Imagens.
+## Criando um (OCIR) Oracle Cloud Infrastructure Registry para armazenar imagens.
 
 Na Console de OCI navegue até **Developer Services** e clique em **Container Registry**. 
 
@@ -20,9 +20,9 @@ Na Console de OCI navegue até **Developer Services** e clique em **Container Re
 
 Clique em **Create Repository.**
 
-* Escolha o compartment.
-* Insira um nome para o repositório (neste exemplo, helloworld).
-* Selecione a opção **Private.**
+- Escolha o compartment.
+- Insira um nome para o repositório (neste exemplo, helloworld).
+- Selecione a opção **Private.**
 
 Então clique em **Create Repository** para finalizar.
 
@@ -73,7 +73,7 @@ Então insira o Auth Token copiado anteriomente no lugar da senha.
   
 ![devops-06](https://objectstorage.sa-saopaulo-1.oraclecloud.com/p/VBDyGiRs1ur5DMLj9Ic5oSsJusz8ViCPmDc1WaAa0ynwBnSzzAEkwOG3Hh-KiJrA/n/gr8gkzaf8nit/b/bucket-euoraf4-site/o/POST-DEVOPS-PIPELINE/devops-06.png)
 
-Ainda no terminal faça o pull da última versão de uma imagem hello-world do DockerHub executando o comando abaixo.
+Ainda no terminal faça o pull da última versão de uma imagem helloworld do DockerHub executando o comando abaixo.
 
 ```javascript
 $ docker pull karthequian/helloworld:latest
